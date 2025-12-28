@@ -28,7 +28,6 @@ html {
 
 body {
     font-family: var(--main-font);
-    overflow-x: hidden;
     background-color: #ffffff;
     color: var(--dark-color);
     line-height: 1.6;
