@@ -333,12 +333,6 @@ body {
           About us
 ================================= 
 */
-@media screen and (min-width:992px) {
-    .about-us-p {
-        max-width: 50%;
-        margin: 0px auto;
-    }
-}
 
 .about-us .left {
     position: relative;
