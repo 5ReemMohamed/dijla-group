@@ -13,159 +13,155 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80" tabindex="0">
-    <nav class="navbar navbar-expand-lg fixed-top glass-nav">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-white" href="#">
-                <img src="images/logo.png" class="" height="70" alt="">
-            </a>
+    <canvas id="fluid">
+    </canvas>
+    <header class="hero-header">
+        <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
 
-            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
-                <i class="fas fa-bars"></i>
-            </button>
+                <a class="navbar-brand fw-bold" href="#">
+                    <img src="images/logo.png" class="" height="70" alt="">
+                </a>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav gap-4">
-                    <li class="nav-item"><a class="nav-link active" href="#">الرئيسية</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">نبذه عنا</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">الخدمات</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            الصفحات
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto gap-4 justify-content-center align-items-center">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">من نحن ؟</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">الخدمات</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                الصفحات
+                            </a>
+
+                            <ul class="dropdown-menu text-end" aria-labelledby="pagesDropdown">
+                                <li><a class="dropdown-item" href="#">الدورات</a></li>
+                                <li><a class="dropdown-item" href="#">التقويم الاكاديمي</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">
+                                        عن المجموعة
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">تاريخ المجموعة</a></li>
+                                        <li><a class="dropdown-item" href="#">رؤيتنا</a></li>
+                                        <li><a class="dropdown-item" href="#">فريق العمل</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#">الاعلام</a></li>
+                                <li><a class="dropdown-item" href="#">بطاقتك الرقميه</a></li>
+                                <li><a class="dropdown-item" href="#">التسجيل</a></li>
+                                <li><a class="dropdown-item" href="#">التحقق من الشهادات</a></li>
+                                <li><a class="dropdown-item" href="#">الوظائف</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">تواصل معنا </a></li>
+                    </ul>
+
+                    <div class="d-flex align-items-center justify-content-center gap-3 py-3 py-lg-0">
+                        <a href="#" class="btn btn-primary">
+                            اطلب استشارة
                         </a>
+                    </div>
+                </div>
 
-                        <ul class="dropdown-menu text-end" aria-labelledby="pagesDropdown">
-                            <li><a class="dropdown-item" href="#">الدورات</a></li>
-                            <li><a class="dropdown-item" href="#">التقويم الاكاديمي</a></li>
-                            <li class="dropdown-submenu">
-                                <a class="dropdown-item dropdown-toggle" href="#">
-                                    عن المجموعة
-                                </a>
-
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">تاريخ المجموعة</a></li>
-                                    <li><a class="dropdown-item" href="#">رؤيتنا</a></li>
-                                    <li><a class="dropdown-item" href="#">فريق العمل</a></li>
-                                </ul>
-                            </li>
-                            <li><a class="dropdown-item" href="#">الاعلام</a></li>
-                            <li><a class="dropdown-item" href="#">بطاقتك الرقميه</a></li>
-                            <li><a class="dropdown-item" href="#">التسجيل</a></li>
-                            <li><a class="dropdown-item" href="#">التحقق من الشهادات</a></li>
-                            <li><a class="dropdown-item" href="#">الوظائف</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#">تواصل معنا</a></li>
-                </ul>
             </div>
-        </div>
-    </nav>
+        </nav>
+        <div class="row g-4 justify-content-center align-items-center mt-lg-5 pt-5">
+            <div class="col-lg-7" data-aos="zoom-in">
+                <div class="hero-content container text-center">
+                    <h1>
+                        مجموعة دجلة<br>
+                        <span>DIJLA GROUP</span>
+                    </h1>
 
-    <header class="hero-section">
-        <div class="overlay"></div>
+                    <p>
+                        نمكّن الأفراد والمؤسسات من تحقيق التميّز والتحول الرقمي عبر برامج احترافية واستشارات استراتيجية
+                        عالية الجودة
+                    </p>
 
-        <div class="container hero-content text-center">
-            <span class="small-title">نقود نمو أعمالك</span>
-
-            <h1 class="hero-title">
-                مجموعة دجلة<br>
-                <span>DIJLA GROUP
-                </span>
-            </h1>
-            <p>نمكّن الأفراد والمؤسسات من تحقيق التميّز والتحول الرقمي عبر برامج احترافية واستشارات استراتيجية عالية
-                الجودة</p>
-        </div>
-        <a href="#about" class="scroll-circle">
-            <span>اكتشف<br>المزيد</span>
-
-        </a>
-
-
-        <div class="counter">
-            <div class="hero-stats" id="heroStats">
-                <div class="stat">
-                    <h3 data-target="15" data-suffix="+">0+</h3>
-                    <p>سنة خبرة</p>
-                </div>
-                <div class="stat">
-                    <h3 data-target="50" data-suffix="+">0+</h3>
-                    <p>دورة تدريبية</p>
-                </div>
-                <div class="stat">
-                    <h3 data-target="95" data-suffix="%">0%</h3>
-                    <p>نسبة الرضا</p>
-                </div>
-                <div class="stat">
-                    <h3 data-target="500" data-suffix="+">0+</h3>
-                    <p>متدرب</p>
+                    <div class="d-flex flex-wrap gap-2 justify-content-center">
+                        <a href="#" class="btn btn-primary">
+                            سجل الان
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            تصفح الدورات
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="bg-bootom">
-            <img src="images/wave-bg.avif" class="w-100" alt="wave">
+        <div class="nm-social">
+            <div class="nm-social-border"></div>
+
+            <div class="nm-social-links">
+                <a class="link-elm" href="#"><i class="fab fa-whatsapp"></i></a>
+                <a class="link-elm" href="#"><i class="fab fa-x-twitter"></i></a>
+                <a class="link-elm" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="link-elm" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="link-elm" href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
         </div>
+
     </header>
+
 
     <section class="about" id="about">
         <div class="container">
             <div class="row g-4 align-items-center" data-aos="zoom-in">
                 <div class="col-lg-6">
                     <div class="right-content d-flex flex-column ">
-                        <div>
+                        <div class="sub-title">
+                            <span class="dot"></span>
                             <span class="about-span">نبذه عنا</span>
                         </div>
-                        <h2 class="">نبذة عن المجموعة</h2>
-                        <p class="mb-4 mt-3">
-                            مجموعة دجلة مؤسسة عراقية رائدة في الاستشارات الإدارية والمالية والتدريب المهني. نمكّن
-                            الأفراد والمؤسسات من تحقيق التميّز والتحول الرقمي عبر برامج احترافية واستشارات استراتيجية
-                            عالية الجودة.
-                        </p>
-                        <p class="mb-1">
-                            نفخر بتقديم حلول تعليمية واستشارية معاصرة تواكب سوق العمل وتعزّز الكفاءة المؤسسية، مع
-                            التزامنا بأعلى معايير الجودة والاحترافية.
-                        </p>
-                        <ul class="about-list list-unstyled mt-5 d-flex flex-column gap-4">
-                            <li class="mb-2 d-flex align-items-center gap-2">
-                                <span class="icon"> <i class="fa-solid fa-check"></i></span>
-                                <span> استشارات إدارية ومالية مبنية على أفضل الممارسات العالمية</span>
-                            </li>
-                            <li class="mb-2 d-flex align-items-center gap-2">
-                                <span class="icon"> <i class="fa-solid fa-check"></i></span>
-                                <span> برامج تدريب مهني متخصصة لتطوير المهارات القيادية</span>
-                            </li>
-                            <li class="mb-2 d-flex align-items-center gap-2">
-                                <span class="icon"> <i class="fa-solid fa-check"></i></span>
-                                <span> حلول التحول الرقمي ورفع كفاءة الأداء المؤسسي</span>
-                            </li>
-                            <li class="mb-2 d-flex align-items-center gap-2">
-                                <span class="icon"> <i class="fa-solid fa-check"></i></span>
-                                <span> كوادر وخبراء معتمدون بخبرة عملية واسعة</span>
-                            </li>
-                        </ul>
+                        <div class="about-txt">
+                            <h2 class="about-title">نصنع أعمالًا تتحدث بقوة — وتحقق نتائج أقوى</h2>
+                        </div>
+                        <div class="about-desc">
+                            <p class="mb-4 mt-3">
+                                مجموعة دجلة مؤسسة عراقية رائدة في الاستشارات الإدارية والمالية والتدريب المهني. نمكّن
+                                الأفراد والمؤسسات من تحقيق التميّز والتحول الرقمي عبر برامج احترافية واستشارات
+                                استراتيجية
+                                عالية الجودة.
+                            </p>
+                            <p class="mb-1">
+                                نفخر بتقديم حلول تعليمية واستشارية معاصرة تواكب سوق العمل وتعزّز الكفاءة المؤسسية، مع
+                                التزامنا بأعلى معايير الجودة والاحترافية.
+                            </p>
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="about-img-wrapper mx-auto">
-                        <div class="shape-under"></div>
-                        <div class="img-content">
+                        <div class="row g-4">
+                            <div class="col-xl-6">
+                                <div class="img-1 img">
+                                    <img src="images/about-3.jpg" alt="about">
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="img-2 img">
+                                    <img src="images/about-2.jpg" alt="about">
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="goals">
-        <div class="container py-5">
-            <div class="heading text-center pb-5" data-aos="zoom-in">
-                <h2 class="fw-bolder mb-2 text-white fs-1">أهدافنا</h2>
-            </div>
-            <div class="row g-4">
+            <div class="row g-4 mt-5">
                 <div class="col-md-6 col-lg-4" data-aos="zoom-in">
                     <div class="goal-card">
                         <div class="goal-content">
@@ -173,7 +169,6 @@
                             <h2>الرؤية</h2>
                             <p>أن تكون DIJLA GROUP المرجع الإقليمي الأول في الاستشارات والتدريب والاعتماد المهني</p>
                         </div>
-                        <div class="number">1</div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4" data-aos="zoom-in">
@@ -183,7 +178,6 @@
                             <h2>الرسالة</h2>
                             <p>تقديم حلول تعليمية واستشارية معاصرة تواكب سوق العمل وتعزّز الكفاءة المؤسسية</p>
                         </div>
-                        <div class="number">2</div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4" data-aos="zoom-in">
@@ -193,72 +187,395 @@
                             <h2>القيم</h2>
                             <p>التميز، الاحترافية، الابتكار، والالتزام بأعلى معايير الجودة في كل ما نقدمه</p>
                         </div>
-                        <div class="number">3</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="features-section py-5">
-        <div class="bg-top">
-            <img src="images/wave-2-bg.png" class="w-100" alt="wave">
-        </div>
-        <div class="container py-5">
-            <div class="row g-4 justify-content-center mt-5" data-aos="zoom-in">
-                <div class="col-lg-3 col-md-6">
-                    <div class="feature-card text-center">
-                        <div class="feature-icon">
-                            <i class="fas fa-tools"></i>
-                        </div>
-                        <h5>خدمات عالية الجودة</h5>
-                        <p>
-                            نقدم حلولًا احترافية مصممة لتلبية احتياجات المؤسسات وتحقيق أفضل النتائج.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="feature-card text-center">
-                        <div class="feature-icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <h5>أفكار مبتكرة</h5>
-                        <p>
-                            نساعدك على تطوير أفكار إبداعية تعزز النمو والتميز في سوق المنافسة.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="feature-card text-center">
-                        <div class="feature-icon">
-                            <i class="fas fa-wallet"></i>
-                        </div>
-                        <h5>حلول مناسبة للميزانية</h5>
-                        <p>
-                            خدمات مدروسة تجمع بين الجودة العالية والتكلفة المناسبة.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="feature-card text-center">
-                        <div class="feature-icon">
-                            <i class="fas fa-headset"></i>
-                        </div>
-                        <h5>دعم متواصل 24/7</h5>
-                        <p>
-                            فريق دعم متخصص لمساعدتك في أي وقت وبأعلى مستوى من الاحترافية.
-                        </p>
-                    </div>
-                </div>
+    <div class="divider">
+        <div class="line"></div>
+        <span>+</span>
+    </div>
+    <section class="services py-5" id="services">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
 
+            <circle cx="50" cy="50" r="24" fill="none" />
+
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+            <circle cx="50" cy="50" r="24" fill="none" />
+        </svg>
+        <div class="circle-jump">
+            <img src="images/circle-2.webp" alt="">
+        </div>
+        <div class="circle-jump circle-2">
+            <img src="images/circle-2.webp" alt="">
+        </div>
+        <div class="circle-jump circle-3">
+            <img src="images/circle-2.webp" alt="">
+        </div>
+        <div class="container">
+            <div class="heading text-center" data-aos="zoom-in">
+                <h2 id="scroll-title" class="scroll-title">
+                    خدماتنا المميزة
+                </h2>
+                <div class="row align-items-center g-4 mt-5">
+                    <div class="col-lg-11" data-aos="zoom-in">
+                        <div class="service-card service-1">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="content">
+                                        <span class="sub-title">مجموعة دجلة</span>
+                                        <h3 class="service-title">
+                                            استشارات إدارية
+                                        </h3>
+                                        <p>
+                                            حلول استراتيجية متكاملة لتطوير الأداء المؤسسي وتحسين العمليات الإدارية
+                                        </p>
+                                        <ul>
+                                            <li class="d-flex gap-2">
+                                                <span><img src="images/star-1.webp" alt="star"></span>
+                                                <span> التخطيط الاستراتيجي</span>
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                <span><img src="images/star-1.webp" alt="star"></span>
+                                                <span> إدارة التغيير</span>
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                <span><img src="images/star-1.webp" alt="star"></span>
+                                                <span> تطوير الأداء</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="image">
+                                        <img src="images/service-1.jpg" alt="service-1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-11 service-2" data-aos="zoom-in">
+                        <div class="service-card ">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="image">
+                                        <img src="images/service-2.jpg" alt="service-1">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="content">
+                                        <span class="sub-title">مجموعة دجلة</span>
+                                        <h3 class="service-title">
+                                            استشارات مالية
+                                        </h3>
+                                        <p>
+                                            تحليل مالي دقيق ودراسات جدوى اقتصادية لدعم قراراتكم الاستثمارية
+                                        </p>
+                                        <ul>
+                                            <li class="d-flex gap-2">
+                                                <span><img src="images/star-1.webp" alt="star"></span>
+                                                <span> التحليل المالي</span>
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                <span><img src="images/star-1.webp" alt="star"></span>
+                                                <span> دراسات الجدوى</span>
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                <span><img src="images/star-1.webp" alt="star"></span>
+                                                <span> التخطيط المالي</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-11" data-aos="zoom-in">
+                        <div class="service-card service-1">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="content">
+                                        <span class="sub-title">مجموعة دجلة</span>
+                                        <h3 class="service-title">
+                                            تطوير المؤسسات
+                                        </h3>
+                                        <p>
+                                            بناء الهياكل التنظيمية وتحسين العمليات لتحقيق الكفاءة المؤسسية
+                                        </p>
+                                        <ul>
+                                            <li class="d-flex gap-2">
+                                                <span><img src="images/star-1.webp" alt="star"></span>
+                                                <span> الهيكلة التنظيمية</span>
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                <span><img src="images/star-1.webp" alt="star"></span>
+                                                <span> تطوير العمليات</span>
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                <span><img src="images/star-1.webp" alt="star"></span>
+                                                <span> إدارة الجودة</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="image">
+                                        <img src="images/service-3.jpg" alt="service-1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-11 service-2" data-aos="zoom-in">
+                        <div class="service-card">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="image">
+                                        <img src="images/service-4.jpg" alt="service-1">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="content">
+                                        <span class="sub-title">مجموعة دجلة</span>
+                                        <h3 class="service-title">
+                                            دراسات جدوى اقتصادية
+                                        </h3>
+                                        <p>
+                                            تقييم شامل للمشاريع والفرص الاستثمارية بمعايير احترافية
+                                        </p>
+                                        <ul>
+                                            <li class="d-flex gap-2">
+                                                <span><img src="images/star-1.webp" alt="star"></span>
+                                                <span>تحليل السوق</span>
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                <span><img src="images/star-1.webp" alt="star"></span>
+                                                <span>التقييم المالي</span>
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                <span><img src="images/star-1.webp" alt="star"></span>
+                                                <span>دراسة المخاطر</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-11" data-aos="zoom-in">
+                        <div class="service-card">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="content">
+                                        <span class="sub-title">مجموعة دجلة</span>
+                                        <h3 class="service-title">
+                                            قياس أثر التدريب
+                                        </h3>
+                                        <p>
+                                            تقييم فعالية البرامج التدريبية وفق نموذج Kirkpatrick المعتمد
+                                        </p>
+                                        <ul>
+                                            <li class="d-flex gap-2">
+                                                <span><img src="images/star-1.webp" alt="star"></span>
+                                                <span>تقييم الأداء</span>
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                <span><img src="images/star-1.webp" alt="star"></span>
+                                                <span>قياس النتائج</span>
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                <span><img src="images/star-1.webp" alt="star"></span>
+                                                <span>التحسين المستمر</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="image">
+                                        <img src="images/service-5.avif" alt="service-1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-11 service-2" data-aos="zoom-in">
+                        <div class="service-card">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="image">
+                                        <img src="images/service-6.avif" alt="service-1">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="content">
+                                        <span class="sub-title">مجموعة دجلة</span>
+                                        <h3 class="service-title">
+                                            الاستشارات الاستراتيجية
+                                        </h3>
+                                        <p>
+                                            توجيه استراتيجي لتحقيق الأهداف المؤسسية والنمو المستدام
+                                        </p>
+                                        <ul>
+                                            <li class="d-flex gap-2">
+                                                <span><img src="images/star-1.webp" alt="star"></span>
+                                                <span>التخطيط طويل المدى</span>
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                <span><img src="images/star-1.webp" alt="star"></span>
+                                                <span>تحليل المنافسة</span>
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                <span><img src="images/star-1.webp" alt="star"></span>
+                                                <span>استراتيجيات النمو</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <div class="divider">
+        <div class="line"></div>
+        <span>+</span>
+    </div>
+    <section class="counter py-5">
+        <div class="container">
+            <div class="row g-4 mt-4">
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                    <div class="counter-card text-center">
+                        <div class="icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="number" data-target="500">0</div>
+                        <h3>متدرب</h3>
+                    </div>
+                </div>
 
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                    <div class="counter-card text-center">
+                        <div class="icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="number" data-target="50">0</div>
+                        <h3>دورة تدريبية</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                    <div class="counter-card text-center">
+                        <div class="icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="number" data-target="15">0</div>
+                        <h3>سنة خبرة</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                    <div class="counter-card text-center">
+                        <div class="icon">
+                            <i class="fas fa-face-smile"></i>
+                        </div>
+                        <div class="number" data-target="95" data-suffix="%">0</div>
+                        <h3>نسبة الرضا</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/main.js"></script>
+    <script>
+        const title = document.getElementById("scroll-title");
+        const words = title.innerText.trim().split(" ");
+        title.innerHTML = "";
+
+        words.forEach(word => {
+            const span = document.createElement("span");
+            span.textContent = word + " ";
+            title.appendChild(span);
+        });
+
+        const items = title.querySelectorAll("span");
+        const SPEED = 2.5;
+
+        window.addEventListener("scroll", () => {
+            const rect = title.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+            let progress = 1 - rect.top / windowHeight;
+            progress *= SPEED;
+            progress = Math.max(0, Math.min(1, progress));
+
+            const active = Math.floor(progress * items.length);
+
+            items.forEach((el, i) => {
+                el.classList.toggle("active", i < active);
+            });
+        });
+        const circles = document.querySelectorAll('circle');
+        for (const [i, circle] of circles.entries()) {
+            circle.setAttribute('stroke', `hsl(${i * (360 / circles.length)}, 100%, 50%)`);
+            circle.setAttribute('stroke-width', 0.5);
+        }
+    </script>
 
 </body>
 
