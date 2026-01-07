@@ -204,7 +204,14 @@ section {
     position: relative;
     z-index: 1;
 }
-
+.about .about-img-wrapper {
+    width: 80%;
+}
+@media screen and (min-width:992px) {
+    .about .about-img-wrapper {
+    width: 100%;
+}
+}
 .about .about-img-wrapper .img {
     height: 580px;
     object-fit: cover;
@@ -1351,7 +1358,7 @@ section {
     color: #111111 !important;
 }
 
-.Btn {
+.Btn,.Btn-2 {
     width: 240px;
     height: 60px;
     border: none;
@@ -1370,7 +1377,7 @@ section {
     margin: auto;
 }
 
-.Btn::before {
+.Btn::before,.Btn-2::before {
     position: absolute;
     content: "عرض جميع الدورات";
     color: var(--tanspot-white);
@@ -1384,13 +1391,15 @@ section {
     background-color: rgba(0, 0, 0, 0.842);
     background-size: 200%;
 }
-
-.Btn:hover {
+.Btn-2::before{
+     content: "المدير التنفيذي";
+}
+.Btn:hover,.Btn-2:hover {
     background-position: right;
     transition-duration: 1s;
 }
 
-.Btn:hover::before {
+.Btn:hover::before,.Btn-2:hover::before {
     background-position: right;
     transition-duration: 1s;
 }
@@ -1421,10 +1430,10 @@ section {
     z-index: -1;
 }
 
-.register-card {
+.register-card,.structure-card {
     background: linear-gradient(#1a1a1a, #232323) padding-box,
         linear-gradient(145deg, transparent 35%, #f97316, #713408) border-box;
-         border: 2px solid transparent;
+    border: 2px solid transparent;
     padding: 40px;
     width: 100%;
     max-width: 520px;
@@ -1432,7 +1441,10 @@ section {
     box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
     margin: auto;
 }
-
+.structure-card{
+        padding: 10px;
+        max-width: 620px;
+}
 .form-label {
     font-weight: 600;
     margin-bottom: 10px;
@@ -1445,7 +1457,8 @@ section {
     background-color: transparent;
     color: var(--tanspot-white) !important;
 }
-.form-control::placeholder{
+
+.form-control::placeholder {
     color: var(--tanspot-white);
 }
 
@@ -1453,17 +1466,20 @@ section {
 .form-select:focus {
     box-shadow: none;
     border-color: var(--secondary-color);
-        background-color: transparent;
+    background-color: transparent;
 
 }
+
 select option {
     background-color: #1a1a1a;
     color: var(--tanspot-white);
 }
-select option:hover{
+
+select option:hover {
     background-color: var(--secondary-color) !important;
     color: #111 !important;
 }
+
 .whatsapp-btn {
     background: var(--secondary-color);
     color: #111;
@@ -1479,22 +1495,25 @@ select option:hover{
 }
 
 .whatsapp-btn:hover {
-   transform: translateY(-5px);
-     background: var(--secondary-color);
+    transform: translateY(-5px);
+    background: var(--secondary-color);
     color: #111;
 }
 
-.register-section .text h2{
+.register-section .text h2 {
     font-size: 40px;
     font-weight: 800;
     margin-bottom: 30px;
 }
-.register-section .text p{
+
+.register-section .text p {
     font-size: 18px;
 }
+
 @media screen and (min-width:992px) {
-    .register-section .text p{
-width: 90%;}
+    .register-section .text p {
+        width: 90%;
+    }
 }
 
 .about::before,
@@ -1507,4 +1526,331 @@ width: 90%;}
 .footer::before,
 .footer::after {
     pointer-events: none;
+}
+
+.calendar {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+.calendar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../images/bg-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.calendar .card-adv {
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    border: 1px solid #ffaf76;
+    max-width: 400px;
+    margin: auto;
+
+}
+
+.calendar .card-adv img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.calendar .card-adv h2 {
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 15px;
+}
+
+.comming-courses .course {
+    width: 100%;
+    background-color: rgba(250, 251, 251, 0.08);
+    border: 1px solid rgba(250, 251, 251, 0.08);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+}
+
+.comming-courses .course:hover {
+    transform: translateX(-5px);
+}
+
+.comming-courses .course h3 {
+    font-size: 24px;
+}
+
+.comming-courses .course .icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:650px) {
+    .comming-courses .course h3 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .calendar .card-adv h2 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width:1400px) {
+    .comming-courses .course h3 {
+        font-size: 18px;
+    }
+}
+
+.staff,
+.projects,
+.council,.structure {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.structure{
+    border-radius: 20px;
+}
+.staff::after,
+.council::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/Banner-1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    inset: 0;
+    z-index: -1;
+}
+
+.projects::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/banner-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+.structure::after{
+     content: "";
+    position: absolute;
+    background-image: url(../images/structure-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+.team-card,
+.council-card {
+    padding: 5px;
+    border-radius: 20px;
+    margin-top: 40px;
+    transform: translateY(0);
+    background: #1c1c1c;
+}
+
+.council-card {
+    margin-top: 0px;
+    border: 1px solid #ff832a62;
+}
+
+.team-card .img,
+.council-card .img,.structure .img {
+    position: relative;
+    z-index: 1;
+}
+
+.council-card .img {
+    height: 300px;
+}
+
+.team-card .img img {
+    mask-image: url(../images/team-mask1.png);
+    mask-size: contain;
+    mask-position: center center;
+    mask-repeat: no-repeat;
+    width: 100%;
+}
+
+.council-card .img img {
+    mask-image: url(../images/second-img-mask.png);
+    mask-size: contain;
+    mask-position: center center;
+    mask-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.structure .img img{
+      mask-image: url(../images/about-masking.png);
+    mask-size: contain;
+    mask-position: center center;
+    mask-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.team-card h2 {
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.team-card .category {
+    padding: 5px 10px;
+    border: 1px solid var(--secondary-color);
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.team-card ul {
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #e6e6e643;
+}
+
+.team-card ul li {
+    background-color: #713408a2;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.team-card .phone-btn {
+    background-color: var(--secondary-color);
+    color: #111;
+    font-weight: 700;
+}
+
+@media screen and (min-width:992px) and (max-width:1400px) {
+    .team-card h2 {
+        font-size: 24px;
+    }
+}
+
+.projects .project-card {
+    padding: 0;
+    min-height: 550px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out 0s;
+    background-image: linear-gradient(to bottom, rgba(10, 10, 9, 0) 0%, rgb(10, 10, 9) 100%), url(../images/projects.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.project-card .content {
+    background-color: rgba(250, 251, 251, 0.08);
+    border: 1px solid rgba(250, 251, 251, 0.08);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    padding: 10px 30px 13px 10px;
+    width: calc(100% - 30px);
+    margin: 15px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.fa-briefcase {
+    color: #ffaf76;
+    font-size: 17px;
+}
+
+.project-card .content .date {
+    color: #ff832a;
+    font-weight: 500;
+}
+
+.project-card .content h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.project-card .content .complete {
+    color: rgb(24, 163, 22);
+    font-weight: 700;
+    display: inline-block;
+}
+.council .content{
+    text-align: center;
+}
+.council .content h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.council .content .role{
+    color: var(--secondary-color);
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.council .content i{
+    color: var(--secondary-color);
+}
+.structure .Btn{
+    width: 150px;
+} 
+.structure .Btn::before {
+    content: "مجلس الإدارة";
+}
+.secondary-card{
+    padding: 30px;
+    background-color: #000000;
+    border: 1px solid #ffffff5a;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.secondary-card h3{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.secondary-card p{
+    color: #ffffffac;
 }

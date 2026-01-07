@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijla Group</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link href="css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80" tabindex="0">
+    <canvas id="fluid">
+    </canvas>
+    <header class="hero-header course-header">
+        <nav id="mainNav" class="navbar navbar-expand-xl navbar-dark fixed-top">
+            <div class="container">
+
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <img src="images/logo.png" class="" height="70" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto gap-4 justify-content-center align-items-center">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#about">من نحن ؟</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#services">الخدمات</a></li>
+                        <li class="nav-item"><a class="nav-link" href="courses.html">الدورات</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                الصفحات
+                            </a>
+
+                            <ul class="dropdown-menu text-end" aria-labelledby="pagesDropdown">
+                                
+                                <li><a class="dropdown-item" href="academic-calendar.html">التقويم الاكاديمي</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">
+                                        عن المجموعة
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#staff">الكوادر</a></li>
+                                        <li><a class="dropdown-item" href="projects.html">المشاريع</a></li>
+                                        <li><a class="dropdown-item" href="staff.html">الهيكل التنظيمي</a></li>
+                                        <li><a class="dropdown-item" href="academic-council.html">المجلس الاكاديمي</a></li>
+                                        <li><a class="dropdown-item" href="#">اللجان</a></li>
+                                        <li><a class="dropdown-item" href="#">الاعتمادات القانونية</a></li>
+                                        <li><a class="dropdown-item" href="#">الشركاء</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#">الاعلام</a></li>
+                                <li><a class="dropdown-item" href="#">بطاقتك الرقميه</a></li>
+                                <li><a class="dropdown-item" href="registration.html">التسجيل</a></li>
+                                <li><a class="dropdown-item" href="#">التحقق من الشهادات</a></li>
+                                <li><a class="dropdown-item" href="#">الوظائف</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">تواصل معنا </a></li>
+                    </ul>
+
+                    <div class="d-flex align-items-center justify-content-center gap-3 py-3 py-xl-0">
+                        <a href="#" class="btn btn-primary">
+                            اطلب استشارة
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <div class="row g-4 justify-content-center align-items-center mt-lg-5 pt-5">
+            <div class="col-lg-7" data-aos="zoom-in">
+                <div class="hero-content container text-center">
+                    <h1>الكوادر الأكاديمية</h1>
+                    <p>فريق من الخبراء والمتخصصين في مختلف المجالات الإدارية والمالية والهندسية</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="staff py-5" id="staff">
+        <div class="container py-5">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6 col-xl-4">
+                    <div class="team-card h-100">
+                        <div class="img">
+                            <img src="images/team.jpg" alt="team">
+                        </div>
+                        <div class="content p-3">
+                            <h2>د. خالد جمال فاضل</h2>
+                            <span class="category">محاسبة إدارية</span>
+                            <p>خبير في المحاسبة الإدارية والتدقيق، يمتلك خبرة واسعة في تطوير النظم المالية.</p>
+
+                            <div class="mt-4">
+                                <p class="fw-bold">المؤهلات:</p>
+                                <ul class="list-unstyled d-flex flex-wrap gap-2">
+                                    <li>دكتوراه محاسبة</li>
+                                    <li>تدقيق مستندي قائم على المخاطر</li>
+                                    <li>لوجستيات</li>
+                                    <li>قيادة Jack Welch</li>
+                                    <li>Excel/Access</li>
+                                </ul>
+                            </div>
+
+                            <div class="contact-btn d-flex flex-column gap-2">
+                                <a href="tel:+9647879974397" class="phone-btn btn">
+                                    <i class="fas fa-phone"></i>
+                                    <span>9647879974397</span>
+                                </a>
+                                <a href="https://wa.me/9647879974397" target="_blank"
+                                    class="whatsapp-btn btn d-flex justify-content-center align-items-center gap-2">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>تواصل عبر واتساب</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                    <div class="team-card h-100">
+                        <div class="img">
+                            <img src="images/team.jpg" alt="team">
+                        </div>
+                        <div class="content p-3">
+                            <h2>د. عقيل الدخيل</h2>
+                            <span class="category">محاسبة / مالية</span>
+                            <p>خبير مالي ومحاسبي، متخصص في إعداد التقارير والسياسات المالية ودراسات الجدوى.</p>
+
+                            <div class="mt-4">
+                                <p class="fw-bold">المؤهلات:</p>
+                                <ul class="list-unstyled d-flex flex-wrap gap-2">
+                                    <li>دكتوراه محاسبة</li>
+                                    <li>إعداد تقارير مالية</li>
+                                    <li>سياسات مالية وإدارية</li>
+                                    <li>دراسات جدوى</li>
+                                </ul>
+                            </div>
+
+                            <div class="contact-btn d-flex flex-column gap-2">
+                                <a href="tel:+9647710088909" class="phone-btn btn">
+                                    <i class="fas fa-phone"></i>
+                                    <span>9647710088909</span>
+                                </a>
+                                <a href="https://wa.me/9647710088909" target="_blank"
+                                    class="whatsapp-btn btn d-flex justify-content-center align-items-center gap-2">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>تواصل عبر واتساب</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                    <div class="team-card h-100">
+                        <div class="img">
+                            <img src="images/team.jpg" alt="team">
+                        </div>
+                        <div class="content p-3">
+                            <h2>د. منال خالد عبود</h2>
+                            <span class="category">اقتصاديات أعمال / محاسبة ورقابة مالية</span>
+                            <p>متخصصة في اقتصاديات الأعمال والرقابة المالية، مع خبرة في التدريب المعتمد.</p>
+
+                            <div class="mt-4">
+                                <p class="fw-bold">المؤهلات:</p>
+                                <ul class="list-unstyled d-flex flex-wrap gap-2">
+                                    <li>بكالوريوس اقتصاديات أعمال / النهرين</li>
+                                    <li>دبلوم محاسبة / معهد الإدارة</li>
+                                    <li>مدربة معتمدة</li>
+                                </ul>
+                            </div>
+
+                            <div class="contact-btn d-flex flex-column gap-2">
+                                <a href="tel:+9647741126845" class="phone-btn btn">
+                                    <i class="fas fa-phone"></i>
+                                    <span>9647741126845</span>
+                                </a>
+                                <a href="https://wa.me/9647741126845" target="_blank"
+                                    class="whatsapp-btn btn d-flex justify-content-center align-items-center gap-2">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>تواصل عبر واتساب</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                    <div class="team-card h-100">
+                        <div class="img">
+                            <img src="images/team.jpg" alt="team">
+                        </div>
+                        <div class="content p-3">
+                            <h2>د. صفا عبد الرحمن راجي</h2>
+                            <span class="category">علوم الحاسبات</span>
+                            <p>مدربة متخصصة في تطبيقات الحاسوب وتحليل البيانات، ومصممة هويات بصرية.</p>
+
+                            <div class="mt-4">
+                                <p class="fw-bold">المؤهلات:</p>
+                                <ul class="list-unstyled d-flex flex-wrap gap-2">
+                                    <li>مدربة أوفيس / قيادة الحاسوب</li>
+                                    <li>تحليل بيانات Excel</li>
+                                    <li>تصميم إعلانات وهويات</li>
+                                </ul>
+                            </div>
+
+                            <div class="contact-btn d-flex flex-column gap-2">
+                                <a href="tel:+9647712189302" class="phone-btn btn">
+                                    <i class="fas fa-phone"></i>
+                                    <span>9647712189302</span>
+                                </a>
+                                <a href="https://wa.me/9647712189302" target="_blank"
+                                    class="whatsapp-btn btn d-flex justify-content-center align-items-center gap-2">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>تواصل عبر واتساب</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                    <div class="team-card h-100">
+                        <div class="img">
+                            <img src="images/team.jpg" alt="team">
+                        </div>
+                        <div class="content p-3">
+                            <h2>د. إثمار حمزة عبيد</h2>
+                            <span class="category">هندسة معمارية</span>
+                            <p>مهندسة معمارية مبدعة، متخصصة في تصميم الواجهات والمخططات المعمارية باستخدام أحدث البرامج.
+                            </p>
+
+                            <div class="mt-4">
+                                <p class="fw-bold">المؤهلات:</p>
+                                <ul class="list-unstyled d-flex flex-wrap gap-2">
+                                    <li>AutoCAD</li>
+                                    <li>3Ds Max</li>
+                                    <li>Revit</li>
+                                    <li>Lumion</li>
+                                    <li>Photoshop</li>
+                                    <li>Illustrator</li>
+                                </ul>
+                            </div>
+
+                            <div class="contact-btn d-flex flex-column gap-2">
+                                <a href="tel:+9647737551160" class="phone-btn btn">
+                                    <i class="fas fa-phone"></i>
+                                    <span>9647737551160</span>
+                                </a>
+                                <a href="https://wa.me/9647737551160" target="_blank"
+                                    class="whatsapp-btn btn d-flex justify-content-center align-items-center gap-2">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>تواصل عبر واتساب</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container-fluid px-5">
+            <div class="row g-4 justify-content-lg-center">
+                <div class="col-lg-3 col-md-6">
+                    <a class="navbar-brand fw-bold" href="index.html">
+                        <img src="images/logo.png" class="" height="70" alt="">
+                    </a>
+
+                    <p class="">
+                        مؤسسة عراقية رائدة في الاستشارات الإدارية والمالية
+                        والتدريب المهني، نسعى لتمكين الأفراد والمؤسسات
+                        وتحقيق النمو المستدام.
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">روابط سريعة</h5>
+                    <ul class="list-unstyled footer-links d-flex flex-column gap-3">
+                        <li><a href="index.html#about">من نحن</a></li>
+                        <li><a href="index.html#services">الخدمات</a></li>
+                        <li><a href="courses.html">الدورات</a></li>
+                        <li><a href="#staff">الكوادر</a></li>
+                        <li><a href="#">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">الصفحات</h5>
+                    <ul class="list-unstyled footer-links d-flex flex-column gap-3">
+                        <li><a href="#">الاعلام</a></li>
+                        <li><a href="#">بطاقتك الرقميه</a></li>
+                        <li><a href="registration.html">التسجيل</a></li>
+                        <li><a href="#">التحقق من الشهادات</a></li>
+                        <li><a href="#">الوظائف</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">تواصل معنا</h5>
+                    <ul class="list-unstyled footer-contact d-flex flex-column gap-2">
+                        <li>📞 +964 787 997 4397</li>
+                        <li>📍 بغداد – شارع أبو طيارة، قرب بيك جكن</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">ساعات العمل</h5>
+                    <p class="mb-2">
+                        الأحد – الخميس<br>
+                        9 ص – 4 م
+                    </p>
+
+                    <h6 class="mt-5 mb-3">تابعنا</h6>
+                    <div class="footer-social d-flex gap-2 flex-wrap">
+                        <a href="https://www.facebook.com/Dijla.Group.IRQ" target="_blank" class="facebook"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/dijla__group/#" target="_blank" class="instagram"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-4">
+            <div class="text-center small pb-3 footer-end">
+                جميع الحقوق محفوظة لأكاديمية دجلة.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
