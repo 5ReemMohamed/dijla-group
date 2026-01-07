@@ -968,7 +968,7 @@ const initFluid = () => {
     }
   });
 
-  window.addEventListener('touchmove', e => {
+  canvas.addEventListener('touchmove', e => {
     e.preventDefault();
     const touches = e.targetTouches;
     let pointer = pointers[0];
