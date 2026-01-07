@@ -900,7 +900,7 @@ section {
         inset: 0;
         width: 100vw;
         height: 100vh;
-        z-index: 10;
+        z-index: 3;
         pointer-events: none;
         display: block;
     }
@@ -1495,4 +1495,16 @@ select option:hover{
 @media screen and (min-width:992px) {
     .register-section .text p{
 width: 90%;}
+}
+
+.about::before,
+.about::after,
+.services::before,
+.services::after,
+.courses::before,
+.courses::after,
+.register-section .container-fluid::after,
+.footer::before,
+.footer::after {
+    pointer-events: none;
 }
