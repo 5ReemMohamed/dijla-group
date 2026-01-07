@@ -571,7 +571,7 @@ section {
         url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d") center / cover no-repeat;
     color: #fff;
     border-radius: 0px;
-    margin: 0px;
+    overflow: hidden;
 }
 
 @media screen and (min-width:768px) {
