@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijla Group</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link href="css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80" tabindex="0">
+    <canvas id="fluid">
+    </canvas>
+    <header class="hero-header course-header">
+        <nav id="mainNav" class="navbar navbar-expand-xl navbar-dark fixed-top">
+            <div class="container">
+
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <img src="images/logo.png" class="" height="70" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto gap-4 justify-content-center align-items-center">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#about">من نحن ؟</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#services">الخدمات</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                الصفحات
+                            </a>
+
+                            <ul class="dropdown-menu text-end" aria-labelledby="pagesDropdown">
+                                <li><a class="dropdown-item" href="#courses">الدورات</a></li>
+                                <li><a class="dropdown-item" href="#">التقويم الاكاديمي</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">
+                                        عن المجموعة
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">الكوادر</a></li>
+                                        <li><a class="dropdown-item" href="#">المشاريع</a></li>
+                                        <li><a class="dropdown-item" href="#">الهيكل التنظيمي</a></li>
+                                        <li><a class="dropdown-item" href="#">المجلس الاكاديمي</a></li>
+                                        <li><a class="dropdown-item" href="#">اللجان</a></li>
+                                        <li><a class="dropdown-item" href="#">الاعتمادات القانونية</a></li>
+                                        <li><a class="dropdown-item" href="#">الشركاء</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#">الاعلام</a></li>
+                                <li><a class="dropdown-item" href="#">بطاقتك الرقميه</a></li>
+                                <li><a class="dropdown-item" href="#">التسجيل</a></li>
+                                <li><a class="dropdown-item" href="#">التحقق من الشهادات</a></li>
+                                <li><a class="dropdown-item" href="#">الوظائف</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">تواصل معنا </a></li>
+                    </ul>
+
+                    <div class="d-flex align-items-center justify-content-center gap-3 py-3 py-xl-0">
+                        <a href="#" class="btn btn-primary">
+                            اطلب استشارة
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <div class="row g-4 justify-content-center align-items-center mt-lg-5 pt-5">
+            <div class="col-lg-7" data-aos="zoom-in">
+                <div class="hero-content container text-center">
+                    <h1>الدورات التدريبية</h1>
+                    <p>برامج تدريبية احترافية معتمدة في مختلف المجالات الإدارية والمالية</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="courses py-5" id="courses">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-xl-4">
+                    <div class="course-card course-1">
+                        <div class="content">
+                            <span class="category">الإدارة والقيادة</span>
+                            <h2 class="mt-2">القيادة الاستراتيجية</h2>
+                            <div class="w-100 mt-2">
+                                <div class="d-flex justify-content-between gap-3">
+                                    <p><i class="fas fa-clock ms-1"></i> <span>40 ساعة</span></p>
+                                    <p><i class="fas fa-users ms-1"></i> <span>120 متدرب</span></p>
+                                </div>
+                                <div>
+                                    <i class="fas fa-chart-line ms-1"></i> <span>المستوى: متقدم</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3 align-items-center w-100">
+                                <a href=""
+                                    class="btn submit-btn d-flex justify-content-center align-items-center gap-2 w-100">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>سجل الآن عبر واتساب</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="course-card course-1">
+                        <div class="content">
+                            <span class="category">المحاسبة والمالية</span>
+                            <h2 class="mt-2">المحاسبة المالية المتقدمة</h2>
+                            <div class="w-100 mt-2">
+                                <div class="d-flex justify-content-between gap-3">
+                                    <p><i class="fas fa-clock ms-1"></i> <span>50 ساعة</span></p>
+                                    <p><i class="fas fa-users ms-1"></i> <span>95 متدرب</span></p>
+                                </div>
+                                <div>
+                                    <i class="fas fa-chart-line ms-1"></i> <span>المستوى: متقدم</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3 align-items-center w-100">
+                                <a href=""
+                                    class="btn submit-btn d-flex justify-content-center align-items-center gap-2 w-100">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>سجل الآن عبر واتساب</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="course-card course-1">
+                        <div class="content">
+                            <span class="category">إدارة المشاريع</span>
+                            <h2 class="mt-2">إدارة المشاريع الاحترافية</h2>
+                            <div class="w-100 mt-2">
+                                <div class="d-flex justify-content-between gap-3">
+                                    <p><i class="fas fa-clock ms-1"></i> <span>45 ساعة</span></p>
+                                    <p><i class="fas fa-users ms-1"></i> <span>150 متدرب</span></p>
+                                </div>
+                                <div>
+                                    <i class="fas fa-chart-line ms-1"></i> <span>المستوى: متوسط</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3 align-items-center w-100">
+                                <a href=""
+                                    class="btn submit-btn d-flex justify-content-center align-items-center gap-2 w-100">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>سجل الآن عبر واتساب</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="course-card course-1">
+                        <div class="content">
+                            <span class="category">المحاسبة والمالية</span>
+                            <h2 class="mt-2">التحليل المالي واتخاذ القرار</h2>
+                            <div class="w-100 mt-2">
+                                <div class="d-flex justify-content-between gap-3">
+                                    <p><i class="fas fa-clock ms-1"></i> <span>35 ساعة</span></p>
+                                    <p><i class="fas fa-users ms-1"></i> <span>80 متدرب</span></p>
+                                </div>
+                                <div>
+                                    <i class="fas fa-chart-line ms-1"></i> <span>المستوى: متوسط</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3 align-items-center w-100">
+                                <a href=""
+                                    class="btn submit-btn d-flex justify-content-center align-items-center gap-2 w-100">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>سجل الآن عبر واتساب</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="course-card course-1">
+                        <div class="content">
+                            <span class="category">التطوير الذاتي</span>
+                            <h2 class="mt-2">مهارات التواصل الفعال</h2>
+                            <div class="w-100 mt-2">
+                                <div class="d-flex justify-content-between gap-3">
+                                    <p><i class="fas fa-clock ms-1"></i> <span>25 ساعة</span></p>
+                                    <p><i class="fas fa-users ms-1"></i> <span>200 متدرب</span></p>
+                                </div>
+                                <div>
+                                    <i class="fas fa-chart-line ms-1"></i> <span>المستوى: مبتدئ</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3 align-items-center w-100">
+                                <a href=""
+                                    class="btn submit-btn d-flex justify-content-center align-items-center gap-2 w-100">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>سجل الآن عبر واتساب</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="course-card course-1">
+                        <div class="content">
+                            <span class="category">الموارد البشرية</span>
+                            <h2 class="mt-2">إدارة الموارد البشرية</h2>
+                            <div class="w-100 mt-2">
+                                <div class="d-flex justify-content-between gap-3">
+                                    <p><i class="fas fa-clock ms-1"></i> <span>40 ساعة</span></p>
+                                    <p><i class="fas fa-users ms-1"></i> <span>110 متدرب</span></p>
+                                </div>
+                                <div>
+                                    <i class="fas fa-chart-line ms-1"></i> <span>المستوى: متوسط</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3 align-items-center w-100">
+                                <a href=""
+                                    class="btn submit-btn d-flex justify-content-center align-items-center gap-2 w-100">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>سجل الآن عبر واتساب</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="button">
+                        <a href="" class="Btn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container-fluid px-5">
+            <div class="row g-4 justify-content-lg-center">
+                <div class="col-lg-3 col-md-6">
+                    <a class="navbar-brand fw-bold" href="index.html">
+                        <img src="images/logo.png" class="" height="70" alt="">
+                    </a>
+
+                    <p class="">
+                        مؤسسة عراقية رائدة في الاستشارات الإدارية والمالية
+                        والتدريب المهني، نسعى لتمكين الأفراد والمؤسسات
+                        وتحقيق النمو المستدام.
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">روابط سريعة</h5>
+                    <ul class="list-unstyled footer-links d-flex flex-column gap-3">
+                        <li><a href="index.html#about">من نحن</a></li>
+                        <li><a href="index.html#services">الخدمات</a></li>
+                        <li><a href="#courses">الدورات</a></li>
+                        <li><a href="#">الكوادر</a></li>
+                        <li><a href="#">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">الصفحات</h5>
+                    <ul class="list-unstyled footer-links d-flex flex-column gap-3">
+                        <li><a href="#">الاعلام</a></li>
+                        <li><a href="#">بطاقتك الرقميه</a></li>
+                        <li><a href="#">التسجيل</a></li>
+                        <li><a href="#">التحقق من الشهادات</a></li>
+                        <li><a href="#">الوظائف</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">تواصل معنا</h5>
+                    <ul class="list-unstyled footer-contact d-flex flex-column gap-2">
+                        <li>📞 +964 787 997 4397</li>
+                        <li>📍 بغداد – شارع أبو طيارة، قرب بيك جكن</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">ساعات العمل</h5>
+                    <p class="mb-2">
+                        الأحد – الخميس<br>
+                        9 ص – 4 م
+                    </p>
+
+                    <h6 class="mt-5 mb-3">تابعنا</h6>
+                    <div class="footer-social d-flex gap-2 flex-wrap">
+                                                <a href="https://www.facebook.com/Dijla.Group.IRQ" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/dijla__group/#" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-4">
+            <div class="text-center small pb-3 footer-end">
+                جميع الحقوق محفوظة لأكاديمية دجلة.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
