@@ -39,22 +39,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-document.querySelectorAll('.submenu-toggle').forEach(link => {
-  link.addEventListener('click', function (e) {
-    e.preventDefault();
-    e.stopPropagation();
+document.querySelectorAll('.submenu-toggle').forEach(button => {
+    button.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
 
-    const submenu = this.nextElementSibling;
+        const parent = this.closest('.dropdown-submenu');
 
-    document.querySelectorAll('.dropdown-submenu .dropdown-menu')
-      .forEach(menu => {
-        if (menu !== submenu) menu.style.display = 'none';
-      });
+        document.querySelectorAll('.dropdown-submenu')
+            .forEach(item => {
+                if (item !== parent) {
+                    item.classList.remove('show');
+                }
+            });
 
-    submenu.style.display =
-      submenu.style.display === 'block' ? 'none' : 'block';
-  });
+        parent.classList.toggle('show');
+    });
 });
+
 
   document.querySelectorAll('.navbar-nav a').forEach(link => {
     link.addEventListener('click', () => {
