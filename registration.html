@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dijla Group</title>
+    <title>Dijla Group | التسجيل</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -26,7 +26,7 @@
             <div class="container">
 
                 <a class="navbar-brand fw-bold" href="index.html">
-                    <img src="images/logo.png" class="" height="70" alt="">
+                    <img src="images/logo.png" height="70" alt="logo">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -40,41 +40,44 @@
                         <li class="nav-item"><a class="nav-link" href="index.html#services">الخدمات</a></li>
                         <li class="nav-item"><a class="nav-link" href="courses.html">الدورات</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="nav-link dropdown-toggle btn btn-link" data-bs-toggle="dropdown"
+                                type="button">
                                 الصفحات
-                            </a>
+                            </button>
 
                             <ul class="dropdown-menu text-end" aria-labelledby="pagesDropdown">
 
                                 <li><a class="dropdown-item" href="academic-calendar.html">التقويم الاكاديمي</a></li>
                                 <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="#">
+                                    <button class="dropdown-item submenu-toggle" data-bs-toggle="dropdown"
+                                        type="button">
                                         عن المجموعة
-                                    </a>
+                                    </button>
 
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="staff.html">الكوادر</a></li>
                                         <li><a class="dropdown-item" href="projects.html">المشاريع</a></li>
                                         <li><a class="dropdown-item" href="structure.html">الهيكل التنظيمي</a></li>
-                                        <li><a class="dropdown-item" href="academic-council.html">المجلس الاكاديمي</a></li>
-                                        <li><a class="dropdown-item" href="#">اللجان</a></li>
-                                        <li><a class="dropdown-item" href="#">الاعتمادات القانونية</a></li>
-                                        <li><a class="dropdown-item" href="#">الشركاء</a></li>
+                                        <li><a class="dropdown-item" href="academic-council.html">المجلس الاكاديمي</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="committees.html">اللجان</a></li>
+                                        <li><a class="dropdown-item" href="legal-approvals.html">الاعتمادات
+                                                القانونية</a></li>
+                                        <li><a class="dropdown-item" href="partner.html">الشركاء</a></li>
                                     </ul>
                                 </li>
-                                <li><a class="dropdown-item" href="#">الاعلام</a></li>
-                                <li><a class="dropdown-item" href="#">بطاقتك الرقميه</a></li>
+                                <li><a class="dropdown-item" href="media.html">الاعلام</a></li>
+                                <li><a class="dropdown-item" href="card.html">بطاقتك الرقميه</a></li>
                                 <li><a class="dropdown-item" href="#register">التسجيل</a></li>
-                                <li><a class="dropdown-item" href="#">التحقق من الشهادات</a></li>
-                                <li><a class="dropdown-item" href="#">الوظائف</a></li>
+                                <li><a class="dropdown-item" href="certificates.html">التحقق من الشهادات</a></li>
+                                <li><a class="dropdown-item" href="jobbs.html">الوظائف</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#">تواصل معنا </a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا </a></li>
                     </ul>
 
                     <div class="d-flex align-items-center justify-content-center gap-3 py-3 py-xl-0">
-                        <a href="#" class="btn btn-primary">
+                        <a href="contact.html" class="btn btn-primary">
                             اطلب استشارة
                         </a>
                     </div>
@@ -94,17 +97,17 @@
     <section class="register-section px-2 px-lg-5" id="register">
         <div class="container-fluid py-5">
             <div class="row g-4 justify-content-center align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-up">
                     <div class="register-card">
 
                         <div class="mb-4">
                             <label class="form-label">الاسم الكامل</label>
-                            <input type="text" id="name" class="form-control" placeholder="">
+                            <input type="text" id="name" class="form-control" placeholder="" required>
                         </div>
 
                         <div class="mb-4">
                             <label class="form-label">الدورة المطلوبة</label>
-                            <select id="course" class="form-select">
+                            <select id="course" class="form-select" required>
                                 <option class="text-white" value="">اختر الدورة</option>
                                 <option>القيادة الاستراتيجية</option>
                                 <option>المحاسبة المالية المتقدمة</option>
@@ -114,33 +117,34 @@
                                 <option>ادارة الموارد البشرية</option>
                             </select>
                         </div>
+                        <p id="errorMsg" class="text-danger mb-3" style="display:none;"></p>
 
-                        <button class="btn whatsapp-btn w-100" onclick="sendWhatsApp()">
+                        <button class="btn whatsapp-btn w-100" id="whatsappBtn">
                             <i class="fab fa-whatsapp"></i>
                             أكمل التسجيل عبر واتساب
                         </button>
 
                     </div>
                 </div>
-                <div class="col-lg-6">
+
+                <div class="col-lg-6" data-aos="fade-left">
                     <div class="text">
                         <h2>ابدأ تطويرك المهني اليوم</h2>
                         <p>
                             انضم إلى برامجنا التدريبية المصممة بعناية لتلبية احتياجات سوق العمل،
                             واحصل على تدريب احترافي يدعم نجاحك الوظيفي والمؤسسي.
                         </p>
-
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up">
         <div class="container-fluid px-5">
             <div class="row g-4 justify-content-lg-center">
                 <div class="col-lg-3 col-md-6">
                     <a class="navbar-brand fw-bold" href="index.html">
-                        <img src="images/logo.png" class="" height="70" alt="">
+                        <img src="images/logo.png" height="70" alt="logo">
                     </a>
 
                     <p class="">
@@ -156,23 +160,23 @@
                         <li><a href="index.html#services">الخدمات</a></li>
                         <li><a href="courses.html">الدورات</a></li>
                         <li><a href="staff.html">الكوادر</a></li>
-                        <li><a href="#">تواصل معنا</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h5 class="mb-3">الصفحات</h5>
                     <ul class="list-unstyled footer-links d-flex flex-column gap-3">
-                        <li><a href="#">الاعلام</a></li>
-                        <li><a href="#">بطاقتك الرقميه</a></li>
+                        <li><a href="media.html">الاعلام</a></li>
+                        <li><a href="card.html">بطاقتك الرقميه</a></li>
                         <li><a href="#register">التسجيل</a></li>
-                        <li><a href="#">التحقق من الشهادات</a></li>
-                        <li><a href="#">الوظائف</a></li>
+                        <li><a href="certificates.html">التحقق من الشهادات</a></li>
+                        <li><a href="jobbs.html">الوظائف</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h5 class="mb-3">تواصل معنا</h5>
                     <ul class="list-unstyled footer-contact d-flex flex-column gap-2">
-                        <li>📞 +964 787 997 4397</li>
+                        <li>📞 <span dir="ltr"> +964 787 997 4397</span></li>
                         <li>📍 بغداد – شارع أبو طيارة، قرب بيك جكن</li>
                     </ul>
                 </div>
@@ -207,6 +211,35 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/main.js"></script>
+    <script>
+        document.getElementById('whatsappBtn').addEventListener('click', function () {
+            const phone = '9647879974397';
+            const name = document.getElementById('name').value.trim();
+            const courseSelect = document.getElementById('course');
+            const course = courseSelect.options[courseSelect.selectedIndex].text;
+            const errorMsg = document.getElementById('errorMsg');
+            errorMsg.style.display = 'none';
+            errorMsg.textContent = '';
+
+            if (!name) {
+                errorMsg.textContent = 'من فضلك أدخل الاسم الكامل';
+                errorMsg.style.display = 'block';
+                return;
+            }
+
+            if (courseSelect.value === '') {
+                errorMsg.textContent = 'من فضلك اختر الدورة المطلوبة';
+                errorMsg.style.display = 'block';
+                return;
+            }
+
+            const message = `مرحباً، اسمي ${name} وأرغب في التسجيل بالدورة: ${course}`;
+            const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+            window.open(url, '_blank');
+        });
+    </script>
+
 </body>
 
 </html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dijla Group</title>
+    <title>Dijla Group | الدورات</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -26,7 +26,7 @@
             <div class="container">
 
                 <a class="navbar-brand fw-bold" href="index.html">
-                    <img src="images/logo.png" class="" height="70" alt="">
+                    <img src="images/logo.png" height="70" alt="logo">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -38,43 +38,46 @@
                         <li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html#about">من نحن ؟</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html#services">الخدمات</a></li>
-                         <li class="nav-item"><a class="nav-link" href="#courses">الدورات</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#courses">الدورات</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="nav-link dropdown-toggle btn btn-link" data-bs-toggle="dropdown"
+                                type="button">
                                 الصفحات
-                            </a>
+                            </button>
 
                             <ul class="dropdown-menu text-end" aria-labelledby="pagesDropdown">
-                               
+
                                 <li><a class="dropdown-item" href="academic-calendar.html">التقويم الاكاديمي</a></li>
                                 <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="#">
+                                    <button class="dropdown-item submenu-toggle" data-bs-toggle="dropdown"
+                                        type="button">
                                         عن المجموعة
-                                    </a>
+                                    </button>
 
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="staff.html">الكوادر</a></li>
                                         <li><a class="dropdown-item" href="projects.html">المشاريع</a></li>
                                         <li><a class="dropdown-item" href="structure.html">الهيكل التنظيمي</a></li>
-                                        <li><a class="dropdown-item" href="academic-council.html">المجلس الاكاديمي</a></li>
-                                        <li><a class="dropdown-item" href="#">اللجان</a></li>
-                                        <li><a class="dropdown-item" href="#">الاعتمادات القانونية</a></li>
-                                        <li><a class="dropdown-item" href="#">الشركاء</a></li>
+                                        <li><a class="dropdown-item" href="academic-council.html">المجلس الاكاديمي</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="committees.html">اللجان</a></li>
+                                        <li><a class="dropdown-item" href="legal-approvals.html">الاعتمادات
+                                                القانونية</a></li>
+                                        <li><a class="dropdown-item" href="partner.html">الشركاء</a></li>
                                     </ul>
                                 </li>
-                                <li><a class="dropdown-item" href="#">الاعلام</a></li>
-                                <li><a class="dropdown-item" href="#">بطاقتك الرقميه</a></li>
+                                <li><a class="dropdown-item" href="media.html">الاعلام</a></li>
+                                <li><a class="dropdown-item" href="card.html">بطاقتك الرقميه</a></li>
                                 <li><a class="dropdown-item" href="registration.html">التسجيل</a></li>
-                                <li><a class="dropdown-item" href="#">التحقق من الشهادات</a></li>
-                                <li><a class="dropdown-item" href="#">الوظائف</a></li>
+                                <li><a class="dropdown-item" href="certificates.html">التحقق من الشهادات</a></li>
+                                <li><a class="dropdown-item" href="jobbs.html">الوظائف</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#">تواصل معنا </a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا </a></li>
                     </ul>
 
                     <div class="d-flex align-items-center justify-content-center gap-3 py-3 py-xl-0">
-                        <a href="#" class="btn btn-primary">
+                        <a href="contact.html" class="btn btn-primary">
                             اطلب استشارة
                         </a>
                     </div>
@@ -83,7 +86,7 @@
             </div>
         </nav>
         <div class="row g-4 justify-content-center align-items-center mt-lg-5 pt-5">
-            <div class="col-lg-7" data-aos="zoom-in">
+            <div class="col-lg-7" data-aos="fade-up">
                 <div class="hero-content container text-center">
                     <h1>الدورات التدريبية</h1>
                     <p>برامج تدريبية احترافية معتمدة في مختلف المجالات الإدارية والمالية</p>
@@ -94,7 +97,7 @@
     <section class="courses py-5" id="courses">
         <div class="container">
             <div class="row g-4 justify-content-center">
-                <div class="col-md-6 col-xl-4">
+                <div class="col-md-6 col-xl-4" data-aos="fade-left">
                     <div class="course-card course-1">
                         <div class="content">
                             <span class="category">الإدارة والقيادة</span>
@@ -109,16 +112,18 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center mt-3 align-items-center w-100">
-                                <a href=""
-                                    class="btn submit-btn d-flex justify-content-center align-items-center gap-2 w-100">
+                                <a href="https://api.whatsapp.com/send?phone=9647879974397&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%20%D9%81%D9%8A%20%D8%AF%D9%88%D8%B1%D8%A9%3A%20%D8%A7%D9%84%D9%82%D9%8A%D8%A7%D8%AF%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D9%8A%D8%AC%D9%8A%D8%A9"
+                                    class="btn submit-btn d-flex justify-content-center align-items-center gap-2 w-100"
+                                    target="_blank" rel="noopener">
                                     <i class="fab fa-whatsapp"></i>
                                     <span>سجل الآن عبر واتساب</span>
                                 </a>
+
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-xl-4">
+                <div class="col-md-6 col-xl-4" data-aos="fade-left">
                     <div class="course-card course-1">
                         <div class="content">
                             <span class="category">المحاسبة والمالية</span>
@@ -133,8 +138,8 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center mt-3 align-items-center w-100">
-                                <a href=""
-                                    class="btn submit-btn d-flex justify-content-center align-items-center gap-2 w-100">
+                                <a href="https://api.whatsapp.com/send?phone=9647879974397&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%20%D9%81%D9%8A%20%D8%AF%D9%88%D8%B1%D8%A9%3A%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B3%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%AA%D9%82%D8%AF%D9%85%D8%A9"
+                                    class="btn submit-btn d-flex justify-content-center align-items-center gap-2 w-100" target="_blank">
                                     <i class="fab fa-whatsapp"></i>
                                     <span>سجل الآن عبر واتساب</span>
                                 </a>
@@ -142,7 +147,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-xl-4">
+                <div class="col-md-6 col-xl-4" data-aos="fade-left">
                     <div class="course-card course-1">
                         <div class="content">
                             <span class="category">إدارة المشاريع</span>
@@ -157,8 +162,8 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center mt-3 align-items-center w-100">
-                                <a href=""
-                                    class="btn submit-btn d-flex justify-content-center align-items-center gap-2 w-100">
+                                <a href="https://api.whatsapp.com/send?phone=9647879974397&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%20%D9%81%D9%8A%20%D8%AF%D9%88%D8%B1%D8%A9%3A%20%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9%20%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9"
+                                    class="btn submit-btn d-flex justify-content-center align-items-center gap-2 w-100" target="_blank">
                                     <i class="fab fa-whatsapp"></i>
                                     <span>سجل الآن عبر واتساب</span>
                                 </a>
@@ -166,7 +171,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-xl-4">
+                <div class="col-md-6 col-xl-4" data-aos="fade-left">
                     <div class="course-card course-1">
                         <div class="content">
                             <span class="category">المحاسبة والمالية</span>
@@ -181,7 +186,7 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center mt-3 align-items-center w-100">
-                                <a href=""
+                                <a href="https://api.whatsapp.com/send?phone=9647879974397&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%20%D9%81%D9%8A%20%D8%AF%D9%88%D8%B1%D8%A9%3A%20%D8%A7%D9%84%D8%AA%D8%AD%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%20%D9%88%D8%A7%D8%AA%D8%AE%D8%A7%D8%B0%20%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%B1" target="_blank"
                                     class="btn submit-btn d-flex justify-content-center align-items-center gap-2 w-100">
                                     <i class="fab fa-whatsapp"></i>
                                     <span>سجل الآن عبر واتساب</span>
@@ -190,7 +195,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-xl-4">
+                <div class="col-md-6 col-xl-4" data-aos="fade-left">
                     <div class="course-card course-1">
                         <div class="content">
                             <span class="category">التطوير الذاتي</span>
@@ -205,7 +210,7 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center mt-3 align-items-center w-100">
-                                <a href=""
+                                <a href="https://api.whatsapp.com/send?phone=9647879974397&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%20%D9%81%D9%8A%20%D8%AF%D9%88%D8%B1%D8%A9%3A%20%D9%85%D9%87%D8%A7%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84" target="_blank"
                                     class="btn submit-btn d-flex justify-content-center align-items-center gap-2 w-100">
                                     <i class="fab fa-whatsapp"></i>
                                     <span>سجل الآن عبر واتساب</span>
@@ -214,7 +219,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-xl-4">
+                <div class="col-md-6 col-xl-4" data-aos="fade-left">
                     <div class="course-card course-1">
                         <div class="content">
                             <span class="category">الموارد البشرية</span>
@@ -229,7 +234,7 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center mt-3 align-items-center w-100">
-                                <a href=""
+                                <a href="https://api.whatsapp.com/send?phone=9647879974397&text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%20%D9%81%D9%8A%20%D8%AF%D9%88%D8%B1%D8%A9%3A%20%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B1%D8%AF%20%D8%A7%D9%84%D8%A8%D8%B4%D8%B1%D9%8A%D8%A9" target="_blank"
                                     class="btn submit-btn d-flex justify-content-center align-items-center gap-2 w-100">
                                     <i class="fab fa-whatsapp"></i>
                                     <span>سجل الآن عبر واتساب</span>
@@ -238,7 +243,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="">
+                <div class="" data-aos="fade-left">
                     <div class="button">
                         <a href="registration.html" class="Btn">
                         </a>
@@ -247,12 +252,12 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up">
         <div class="container-fluid px-5">
             <div class="row g-4 justify-content-lg-center">
                 <div class="col-lg-3 col-md-6">
                     <a class="navbar-brand fw-bold" href="index.html">
-                        <img src="images/logo.png" class="" height="70" alt="">
+                        <img src="images/logo.png" height="70" alt="logo">
                     </a>
 
                     <p class="">
@@ -268,23 +273,23 @@
                         <li><a href="index.html#services">الخدمات</a></li>
                         <li><a href="#courses">الدورات</a></li>
                         <li><a href="staff.html">الكوادر</a></li>
-                        <li><a href="#">تواصل معنا</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h5 class="mb-3">الصفحات</h5>
                     <ul class="list-unstyled footer-links d-flex flex-column gap-3">
-                        <li><a href="#">الاعلام</a></li>
-                        <li><a href="#">بطاقتك الرقميه</a></li>
+                        <li><a href="media.html">الاعلام</a></li>
+                        <li><a href="card.html">بطاقتك الرقميه</a></li>
                         <li><a href="registration.html">التسجيل</a></li>
-                        <li><a href="#">التحقق من الشهادات</a></li>
-                        <li><a href="#">الوظائف</a></li>
+                        <li><a href="certificates.html">التحقق من الشهادات</a></li>
+                        <li><a href="jobbs.html">الوظائف</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h5 class="mb-3">تواصل معنا</h5>
                     <ul class="list-unstyled footer-contact d-flex flex-column gap-2">
-                        <li>📞 +964 787 997 4397</li>
+                        <li>📞 <span dir="ltr"> +964 787 997 4397</span></li>
                         <li>📍 بغداد – شارع أبو طيارة، قرب بيك جكن</li>
                     </ul>
                 </div>
@@ -297,8 +302,10 @@
 
                     <h6 class="mt-5 mb-3">تابعنا</h6>
                     <div class="footer-social d-flex gap-2 flex-wrap">
-                                                <a href="https://www.facebook.com/Dijla.Group.IRQ" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/dijla__group/#" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/Dijla.Group.IRQ" target="_blank" class="facebook"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/dijla__group/#" target="_blank" class="instagram"><i
+                                class="fab fa-instagram"></i></a>
                     </div>
                 </div>
 

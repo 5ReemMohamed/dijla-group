@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dijla Group | المشاريع</title>
+    <title>Dijla Group | بطاقتك من أكاديمية دجلة</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -46,7 +46,7 @@
                             </button>
 
                             <ul class="dropdown-menu text-end" aria-labelledby="pagesDropdown">
-                                
+
                                 <li><a class="dropdown-item" href="academic-calendar.html">التقويم الاكاديمي</a></li>
                                 <li class="dropdown-submenu">
                                     <button class="dropdown-item submenu-toggle" data-bs-toggle="dropdown"
@@ -56,7 +56,7 @@
 
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="staff.html">الكوادر</a></li>
-                                        <li><a class="dropdown-item" href="#projects">المشاريع</a></li>
+                                        <li><a class="dropdown-item" href="projects.html">المشاريع</a></li>
                                         <li><a class="dropdown-item" href="structure.html">الهيكل التنظيمي</a></li>
                                         <li><a class="dropdown-item" href="academic-council.html">المجلس الاكاديمي</a></li>
                                         <li><a class="dropdown-item" href="committees.html">اللجان</a></li>
@@ -65,7 +65,7 @@
                                     </ul>
                                 </li>
                                 <li><a class="dropdown-item" href="media.html">الاعلام</a></li>
-                                <li><a class="dropdown-item" href="card.html">بطاقتك الرقميه</a></li>
+                                <li><a class="dropdown-item" href="#cardForm">بطاقتك الرقميه</a></li>
                                 <li><a class="dropdown-item" href="registration.html">التسجيل</a></li>
                                 <li><a class="dropdown-item" href="certificates.html">التحقق من الشهادات</a></li>
                                 <li><a class="dropdown-item" href="jobbs.html">الوظائف</a></li>
@@ -86,89 +86,99 @@
         <div class="row g-4 justify-content-center align-items-center mt-lg-5 pt-5">
             <div class="col-lg-7" data-aos="zoom-in">
                 <div class="hero-content container text-center">
-                    <h1>المشاريع</h1>
-                    <p>نفخر بمشاريعنا الناجحة مع كبرى المؤسسات العراقية</p>
+                    <h1 class="fs-1">بطاقتك من أكاديمية دجلة</h1>
+                    <p>أنشئ بطاقتك الرقمية الاحترافية وشاركها بسهولة</p>
                 </div>
             </div>
         </div>
     </header>
-    <section class="projects py-5" id="projects">
+    <section class="py-5 card-form" id="cardForm">
         <div class="container py-5">
-            <div class="row g-4">
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="project-card">
-                        <div class="content">
-                            <p>
-                                <i class="fas fa-briefcase ms-2"></i>
-                                <span class="fw-medium">شركة النفط الوطنية</span>
-                                <span class="date me-2">• 2024</span>
-                            </p>
-                            <h2>تطوير الهيكل التنظيمي لشركة النفط الوطنية</h2>
-                            <p>إعادة هيكلة شاملة للمؤسسة وتطوير العمليات الإدارية</p>
-                            <p class="complete">
-                                <i class="fas fa-check-to-slot ms-1"></i>
-                                <span>مكتمل بنجاح</span>
-                            </p>
+            <div class="row g-4 align-items-start">
+                <div class="col-lg-5" data-aos="fade-left">
+                    <div class="card-preview bg-dark" id="cardPreview">
+                        <div class="card-header-preview">
+                            <img src="https://via.placeholder.com/90" id="previewImage" class="avatar">
+                            <div>
+                                <h5 id="previewName">الاسم الكامل</h5>
+                                <span id="previewJob">نبذة قصيرة</span>
+                            </div>
                         </div>
+
+                        <hr>
+
+                        <div class="card-footer-preview">
+                            <small>جميع الحقوق محفوظة © مجموعة دجلة</small>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-2 mt-3">
+                        <button class="btn btn-outline-secondary w-50" id="shareBtn">
+                            <i class="fa-solid fa-share-nodes"></i> مشاركة
+                        </button>
+                        <button class="btn btn-warning w-50" id="downloadBtn">
+                            <i class="fa-solid fa-download"></i> تنزيل
+                        </button>
                     </div>
                 </div>
-                <div class="col-lg-6" data-aos="fade-right">
-                    <div class="project-card">
-                        <div class="content">
-                            <p>
-                                <i class="fas fa-briefcase ms-2"></i>
+                <div class="col-lg-7" data-aos="fade-up">
+                    <div class="p-4 shadow-sm bg-dark rounded-4 form-card">
+                        <h3 class="mb-4 fw-bold text-center">أدخل بياناتك</h3>
 
-                                <span class="fw-medium">وزارة التخطيط</span>
-                                <span class="date me-2">• 2024</span>
-                            </p>
-                            <h2>برنامج تدريب القيادات الإدارية</h2>
-                            <p>تدريب 200+ موظف على مهارات القيادة والإدارة الحديثة</p>
-                            <p class="complete">
-                                <i class="fas fa-check-to-slot ms-1"></i>
-                                <span>مكتمل بنجاح</span>
-                            </p>
+                        <div class="form-group mb-4">
+                            <label>الاسم الكامل</label>
+                            <input type="text" class="form-control" id="nameInput">
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label>نبذة قصيرة</label>
+                            <input type="text" class="form-control" id="jobInput" placeholder="مثال: مهندس معماري">
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label>رقم الهاتف</label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label>رقم واتساب</label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label>العنوان (اختياري)</label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label>صورتك أو شعارك</label>
+                            <input type="file" class="form-control" id="imageInput" accept="image/*">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label class="fw-bold mb-2">روابط التواصل</label>
+
+                            <div id="linksWrapper">
+                                <div class="link-row d-flex align-items-center gap-2 mb-2">
+                                    <input type="url" class="form-control link-input" placeholder="https://example.com">
+                                    <button type="button" class="btn btn-danger btn-sm remove-link">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <button type="button" class="btn  btn-warning w-100 mt-2" id="addLinkBtn">
+                                <i class="fa-solid fa-plus"></i> إضافة رابط
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="project-card">
-                        <div class="content">
-                            <p>
-                                <i class="fas fa-briefcase ms-2"></i>
 
-                                <span class="fw-medium">مجموعة الاستثمار العراقية</span>
-                                <span class="date me-2">• 2023</span>
-                            </p>
-                            <h2>دراسة جدوى مشروع استثماري</h2>
-                            <p>تقييم شامل لفرصة استثمارية بقيمة 50 مليون دولار</p>
-                            <p class="complete">
-                                <i class="fas fa-check-to-slot ms-1"></i>
-                                <span>مكتمل بنجاح</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-right">
-                    <div class="project-card">
-                        <div class="content">
-                            <p>
-                                <i class="fas fa-briefcase ms-2"></i>
-
-                                <span class="fw-medium">شركة الصناعات الغذائية</span>
-                                <span class="date me-2">• 2023</span>
-                            </p>
-                            <h2>تطوير نظام إدارة الجودة</h2>
-                            <p>تطبيق معايير الجودة الدولية ISO 9001</p>
-                            <p class="complete">
-                                <i class="fas fa-check-to-slot ms-1"></i>
-                                <span>مكتمل بنجاح</span>
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
+
+
     </section>
+    <div class="card-links mt-3" id="previewLinks"></div>
     <footer class="footer" data-aos="fade-up">
         <div class="container-fluid px-5">
             <div class="row g-4 justify-content-lg-center">
@@ -197,7 +207,7 @@
                     <h5 class="mb-3">الصفحات</h5>
                     <ul class="list-unstyled footer-links d-flex flex-column gap-3">
                         <li><a href="media.html">الاعلام</a></li>
-                        <li><a href="card.html">بطاقتك الرقميه</a></li>
+                        <li><a href="#cardForm">بطاقتك الرقميه</a></li>
                         <li><a href="registration.html">التسجيل</a></li>
                         <li><a href="certificates.html">التحقق من الشهادات</a></li>
                         <li><a href="jobbs.html">الوظائف</a></li>
@@ -206,7 +216,7 @@
                 <div class="col-lg-2 col-md-6">
                     <h5 class="mb-3">تواصل معنا</h5>
                     <ul class="list-unstyled footer-contact d-flex flex-column gap-2">
-                         <li>📞 <span dir="ltr"> +964 787 997 4397</span></li>
+                        <li>📞 <span dir="ltr"> +964 787 997 4397</span></li>
                         <li>📍 بغداد – شارع أبو طيارة، قرب بيك جكن</li>
                     </ul>
                 </div>
@@ -240,7 +250,118 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+        integrity="sha512-BNa5l6V7t0rOEtpJR/YWZLxE+nobVhtSGcVwqDAVBBusZT6F4LmSpaV0t1Ik5+pNSTsK/CtYQgQki71RkVQYxA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="js/main.js"></script>
+    <script>
+        const nameInput = document.getElementById("nameInput");
+        const jobInput = document.getElementById("jobInput");
+        const imageInput = document.getElementById("imageInput");
+
+        const previewName = document.getElementById("previewName");
+        const previewJob = document.getElementById("previewJob");
+        const previewImage = document.getElementById("previewImage");
+
+        nameInput.addEventListener("input", () => {
+            previewName.textContent = nameInput.value || "الاسم الكامل";
+        });
+
+        jobInput.addEventListener("input", () => {
+            previewJob.textContent = jobInput.value || "نبذة قصيرة";
+        });
+        imageInput.addEventListener("change", () => {
+            const file = imageInput.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = () => {
+                previewImage.src = reader.result;
+            };
+            reader.readAsDataURL(file);
+        });
+
+
+        const linksWrapper = document.getElementById("linksWrapper");
+        const previewLinks = document.getElementById("previewLinks");
+        const addLinkBtn = document.getElementById("addLinkBtn");
+
+        addLinkBtn.addEventListener("click", () => {
+            const div = document.createElement("div");
+            div.className = "link-row d-flex align-items-center gap-2 mb-2";
+
+            div.innerHTML = `
+    <input type="url" class="form-control link-input" placeholder="https://example.com">
+    <button type="button" class="btn btn-danger btn-sm remove-link">
+      <i class="fa-solid fa-trash"></i>
+    </button>
+  `;
+
+            linksWrapper.appendChild(div);
+        });
+        linksWrapper.addEventListener("click", (e) => {
+            if (e.target.closest(".remove-link")) {
+                e.target.closest(".link-row").remove();
+                updateLinksPreview();
+            }
+        });
+
+        linksWrapper.addEventListener("input", updateLinksPreview);
+
+        function updateLinksPreview() {
+            previewLinks.innerHTML = "";
+
+            document.querySelectorAll(".link-input").forEach(input => {
+                if (input.value.trim() !== "") {
+                    const a = document.createElement("a");
+                    a.href = input.value;
+                    a.target = "_blank";
+                    a.innerHTML = `<i class="fa-solid fa-link"></i>`;
+                    previewLinks.appendChild(a);
+                }
+            });
+        }
+
+
+        document.getElementById("downloadBtn").addEventListener("click", () => {
+            const card = document.getElementById("cardPreview");
+
+            const printContainer = document.createElement("div");
+            printContainer.id = "printContainer";
+
+            const cardClone = card.cloneNode(true);
+            printContainer.appendChild(cardClone);
+
+            document.body.appendChild(printContainer);
+
+            document.body.classList.add("printing");
+            window.print();
+            window.onafterprint = () => {
+                printContainer.remove();
+                document.body.classList.remove("printing");
+            };
+        });
+
+        document.getElementById("shareBtn").addEventListener("click", async () => {
+            const shareData = {
+                title: previewName.textContent,
+                text: "هذه بطاقتي الرقمية",
+                url: window.location.href
+            };
+
+            if (navigator.share) {
+                try {
+                    await navigator.share(shareData);
+                } catch (err) {
+                    console.log("Share canceled");
+                }
+            } else {
+                await navigator.clipboard.writeText(window.location.href);
+                alert("تم نسخ الرابط ✔️");
+            }
+        });
+    </script>
 </body>
 
 </html>

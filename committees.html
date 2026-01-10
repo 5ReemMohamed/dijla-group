@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijla Group | اللجان</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link href="css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80" tabindex="0">
+    <canvas id="fluid">
+    </canvas>
+    <header class="hero-header course-header">
+        <nav id="mainNav" class="navbar navbar-expand-xl navbar-dark fixed-top">
+            <div class="container">
+
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <img src="images/logo.png" height="70" alt="logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto gap-4 justify-content-center align-items-center">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#about">من نحن ؟</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#services">الخدمات</a></li>
+                        <li class="nav-item"><a class="nav-link" href="courses.html">الدورات</a></li>
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle btn btn-link" data-bs-toggle="dropdown"
+                                type="button">
+                                الصفحات
+                            </button>
+
+                            <ul class="dropdown-menu text-end" aria-labelledby="pagesDropdown">
+
+                                <li><a class="dropdown-item" href="academic-calendar.html">التقويم الاكاديمي</a></li>
+                                <li class="dropdown-submenu">
+                                    <button class="dropdown-item submenu-toggle" data-bs-toggle="dropdown"
+                                        type="button">
+                                        عن المجموعة
+                                    </button>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="staff.html">الكوادر</a></li>
+                                        <li><a class="dropdown-item" href="projects.html">المشاريع</a></li>
+                                        <li><a class="dropdown-item" href="structure.html">الهيكل التنظيمي</a></li>
+                                        <li><a class="dropdown-item" href="academic-council.html">المجلس الاكاديمي</a></li>
+                                        <li><a class="dropdown-item" href="#committees">اللجان</a></li>
+                                        <li><a class="dropdown-item" href="legal-approvals.html">الاعتمادات القانونية</a></li>
+                                        <li><a class="dropdown-item" href="partner.html">الشركاء</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="media.html">الاعلام</a></li>
+                                <li><a class="dropdown-item" href="card.html">بطاقتك الرقميه</a></li>
+                                <li><a class="dropdown-item" href="registration.html">التسجيل</a></li>
+                                <li><a class="dropdown-item" href="certificates.html">التحقق من الشهادات</a></li>
+                                <li><a class="dropdown-item" href="jobbs.html">الوظائف</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا </a></li>
+                    </ul>
+
+                    <div class="d-flex align-items-center justify-content-center gap-3 py-3 py-xl-0">
+                        <a href="contact.html" class="btn btn-primary">
+                            اطلب استشارة
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <div class="row g-4 justify-content-center align-items-center mt-lg-5 pt-5">
+            <div class="col-lg-7" data-aos="zoom-in">
+                <div class="hero-content container text-center">
+                    <h1>اللجان</h1>
+                    <p>لجان متخصصة لضمان التميز في جميع جوانب عملنا</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="committees py-5" id="committees">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4"  data-aos="fade-left">
+                    <div class="committees-card">
+                        <div class="icon-number d-flex flex-wrap gap-2 align-items-center justify-content-between mb-5">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66"
+                                    fill="none">
+                                    <path d="M33 2L8 10V30C8 46.2 20.4 60 33 64C45.6 60 58 46.2 58 30V10L33 2Z"
+                                        fill="#FFFFFF" />
+                                    <path
+                                        d="M33 7L13 13.5V29.2C13 42.4 22.8 53.6 33 57.2C43.2 53.6 53 42.4 53 29.2V13.5L33 7Z"
+                                        fill="#f97316" />
+                                    <path d="M25.5 33.5L30.5 38.5L41 27" stroke="#0C0C0C" stroke-width="4"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+
+                                </svg>
+
+                            </div>
+                            <div class="card-number">
+                                1
+                            </div>
+                        </div>
+                        <div class="content mt-4">
+                            <h2>لجنة الجودة والاعتماد</h2>
+
+                            <p>
+                                مسؤولة عن ضمان جودة البرامج التدريبية والحصول على الاعتمادات الدولية
+                            </p>
+                            <span class="person-num">عدد الأعضاء: 5</span>
+                            <div class="img mt-4">
+                                <img src="images/committee-1.jpg" alt="committee" class="img-fluid rounded-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4"  data-aos="fade-up">
+                    <div class="committees-card">
+                        <div class="icon-number d-flex flex-wrap gap-2 align-items-center justify-content-between mb-5">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66"
+                                    fill="none">
+                                    <path d="M10 12C10 9.8 11.8 8 14 8H33V54H14C11.8 54 10 52.2 10 50V12Z"
+                                        fill="#FFFFFF" />
+
+                                    <path d="M33 8H52C54.2 8 56 9.8 56 12V50C56 52.2 54.2 54 52 54H33V8Z"
+                                        fill="#f97316" />
+                                    <path d="M33 8V54" stroke="#0C0C0C" stroke-width="2" />
+                                    <path d="M44.5 18.5L50 24L28 46L22 40.5L44.5 18.5Z" fill="#FFFFFF" />
+
+                                    <path
+                                        d="M50 24L52.5 21.5C53.6 20.4 53.6 18.6 52.5 17.5C51.4 16.4 49.6 16.4 48.5 17.5L46 20L50 24Z"
+                                        fill="#f97316" />
+
+                                    <path d="M22 40.5L20 48L27.5 46L22 40.5Z" fill="#f97316" />
+
+                                </svg>
+
+                            </div>
+                            <div class="card-number">
+                                2
+                            </div>
+                        </div>
+                        <div class="content mt-4">
+                            <h2>لجنة تطوير المناهج</h2>
+
+                            <p>
+                                تعمل على تحديث وتطوير المحتوى التدريبي بما يتناسب مع احتياجات السوق
+                            </p>
+                            <span class="person-num">عدد الأعضاء: 6</span>
+                             <div class="img mt-4">
+                                <img src="images/committee-2.jpg" alt="committee" class="img-fluid rounded-3 w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4"  data-aos="fade-right">
+                    <div class="committees-card">
+                        <div class="icon-number d-flex flex-wrap gap-2 align-items-center justify-content-between mb-5">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="66" height="72" viewBox="0 0 66 72"
+                                    fill="none">
+                                    <path
+                                        d="M30.9111 72H34.1593C35.5655 72 36.7934 70.8578 36.7934 69.455H28.277C28.3627 70.8579 29.5049 72 30.9111 72Z"
+                                        fill="#f97316"></path>
+                                    <path
+                                        d="M40.4804 59.7071C40.4804 59.004 39.8665 58.39 39.1633 58.39H25.9925C25.2894 58.39 24.6754 59.004 24.6754 59.7071C24.6754 60.4102 25.2894 61.0242 25.9925 61.0242H39.2494C39.9525 61.0242 40.4804 60.4102 40.4804 59.7071Z"
+                                        fill="#f97316"></path>
+                                    <path
+                                        d="M1.75611 34.3333H7.99172C8.95898 34.3333 9.74783 33.5444 9.74783 32.5772C9.74783 31.6099 8.95895 30.8211 7.99172 30.8211H1.75611C0.788846 30.8211 0 31.61 0 32.5772C0 33.5411 0.792305 34.3333 1.75611 34.3333Z"
+                                        fill="#f97316"></path>
+                                    <path
+                                        d="M55.407 32.5772C55.407 33.5445 56.1959 34.3333 57.1631 34.3333H63.3987C64.366 34.3333 65.1548 33.5444 65.1548 32.5772C65.1548 31.6099 64.3659 30.8211 63.3987 30.8211H57.1631C56.1958 30.8211 55.407 31.61 55.407 32.5772Z"
+                                        fill="#f97316"></path>
+                                    <path
+                                        d="M34.3338 7.99169V1.75611C34.3338 0.788843 33.5449 0 32.5776 0C31.6104 0 30.8215 0.788878 30.8215 1.75611V7.99169C30.8215 8.95895 31.6104 9.7478 32.5776 9.7478C33.5449 9.7478 34.3338 8.95549 34.3338 7.99169Z"
+                                        fill="#f97316"></path>
+                                    <path
+                                        d="M12.0329 9.56868C11.3297 8.86555 10.2768 8.86555 9.57361 9.56868C8.87048 10.2718 8.87048 11.3248 9.57361 12.0279L13.9639 16.4182C14.3137 16.7681 14.7528 16.9464 15.1918 16.9464C15.6308 16.9464 16.0698 16.7715 16.4196 16.4182C17.1228 15.7151 17.1228 14.6621 16.4196 13.9589L12.0329 9.56868Z"
+                                        fill="#f97316"></path>
+                                    <path
+                                        d="M48.7323 48.7317C48.0292 49.4348 48.0292 50.4878 48.7323 51.191L53.1226 55.5812C53.4724 55.9311 53.9115 56.1094 54.3505 56.1094C54.7895 56.1094 55.2285 55.9345 55.5783 55.5812C56.2815 54.8781 56.2815 53.8251 55.5783 53.122L51.188 48.7317C50.4884 48.0286 49.3497 48.0286 48.7323 48.7317Z"
+                                        fill="#f97316"></path>
+                                    <path
+                                        d="M55.582 9.56868C54.8788 8.86555 53.8259 8.86555 53.1227 9.56868L48.7324 13.9589C48.0293 14.6621 48.0293 15.7151 48.7324 16.4182C49.0823 16.7681 49.5213 16.9464 49.9603 16.9464C50.3993 16.9464 50.8384 16.7715 51.1882 16.4182L55.5785 12.0279C56.285 11.3248 56.2851 10.186 55.582 9.56868Z"
+                                        fill="#f97316"></path>
+                                    <path
+                                        d="M9.57352 55.5812C9.92337 55.9311 10.3624 56.1094 10.8014 56.1094C11.2404 56.1094 11.6794 55.9345 12.0293 55.5812L16.4195 51.191C17.1227 50.4878 17.1227 49.4349 16.4195 48.7317C15.7164 48.0286 14.6634 48.0286 13.9603 48.7317L9.57001 53.122C8.8703 53.8251 8.87038 54.9673 9.57352 55.5812Z"
+                                        fill="#f97316"></path>
+                                    <path
+                                        d="M14.9269 31.081C14.2238 37.0524 16.5938 42.4957 20.5451 46.1826C23.1793 48.5527 24.6713 51.9792 24.6713 55.5769H28.1835C28.0943 55.402 28.0943 55.2271 28.0943 55.0487L28.0977 38.1945C27.5695 38.4586 26.9556 38.6335 26.2524 38.6335C23.7932 38.6335 21.7729 36.6133 21.7729 34.154C21.7729 31.6948 23.7932 29.6746 26.2524 29.6746C28.7117 29.6746 30.7319 31.6948 30.7319 34.154C30.7319 34.4181 30.7319 34.6822 30.6427 34.9429H34.4191C34.3299 34.6788 34.3299 34.4147 34.3299 34.154C34.3299 31.6948 36.3501 29.6746 38.8094 29.6746C41.2687 29.6746 43.2889 31.6948 43.2889 34.154C43.2889 36.6133 41.2687 38.6335 38.8128 38.6335C38.1989 38.6335 37.5849 38.4586 36.9675 38.1945V55.0522C36.9675 55.2271 36.9675 55.4021 36.8783 55.5804H40.3905C40.3905 51.979 41.9717 48.556 44.6059 46.0966C48.1181 42.8485 50.3133 38.1941 50.3133 33.1005C50.3133 22.6534 41.2684 14.2224 30.557 15.4499C22.3904 16.3314 15.8048 22.9168 14.9267 31.0801L14.9269 31.081Z"
+                                        fill="white"></path>
+                                    <path d="M30.7322 37.5812H34.3336V53.7357H30.7322V37.5812Z" fill="white"></path>
+                                    <path
+                                        d="M28.1876 34.1541C28.1876 36.6134 24.5005 36.6134 24.5005 34.1541C24.5005 31.6983 28.1876 31.6983 28.1876 34.1541Z"
+                                        fill="white"></path>
+                                    <path
+                                        d="M40.6548 34.1541C40.6548 36.6134 36.9677 36.6134 36.9677 34.1541C36.9677 31.6983 40.6548 31.6983 40.6548 34.1541Z"
+                                        fill="white"></path>
+                                </svg>
+                            </div>
+                            <div class="card-number">
+                                3
+                            </div>
+                        </div>
+                        <div class="content mt-4">
+                            <h2>لجنة البحث والتطوير</h2>
+
+                            <p>
+                                تركز على الأبحاث والدراسات في مجالات الإدارة والمالية
+                            </p>
+                            <span class="person-num">عدد الأعضاء: 4</span>
+                           <div class="img mt-4">
+                                <img src="images/committee-3.jpg" alt="committee" class="img-fluid rounded-3 w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4"  data-aos="fade-left">
+                    <div class="committees-card">
+                        <div class="icon-number d-flex flex-wrap gap-2 align-items-center justify-content-between mb-5">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="66" height="72" viewBox="0 0 66 72"
+                                    fill="none">
+                                    <circle cx="33" cy="30" r="10" fill="white" />
+                                    <circle cx="33" cy="30" r="5" fill="#f97316" />
+                                    <rect x="28" y="4" width="10" height="10" rx="2" fill="#f97316" />
+                                    <path d="M33 14V20" stroke="#f97316" stroke-width="2" />
+                                    <rect x="4" y="26" width="10" height="10" rx="2" fill="#f97316" />
+                                    <path d="M14 31H20" stroke="#f97316" stroke-width="2" />
+                                    <rect x="52" y="26" width="10" height="10" rx="2" fill="#f97316" />
+                                    <path d="M46 31H52" stroke="#f97316" stroke-width="2" />
+                                    <rect x="28" y="46" width="10" height="10" rx="2" fill="#f97316" />
+                                    <path d="M33 40V46" stroke="#f97316" stroke-width="2" />
+                                </svg>
+
+                            </div>
+                            <div class="card-number">
+                                4
+                            </div>
+                        </div>
+                        <div class="content mt-4">
+                            <h2>لجنة الشراكات الاستراتيجية</h2>
+                            <p>
+                                تعمل على بناء شراكات مع المؤسسات المحلية والدولية
+                            </p>
+                            <span class="person-num">عدد الأعضاء: 5</span>
+                             <div class="img mt-4">
+                                <img src="images/committee-4.jpg" alt="committee" class="img-fluid rounded-3 w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container-fluid px-5">
+            <div class="row g-4 justify-content-lg-center">
+                <div class="col-lg-3 col-md-6">
+                    <a class="navbar-brand fw-bold" href="index.html">
+                        <img src="images/logo.png" class="" height="70" alt="">
+                    </a>
+
+                    <p class="">
+                        مؤسسة عراقية رائدة في الاستشارات الإدارية والمالية
+                        والتدريب المهني، نسعى لتمكين الأفراد والمؤسسات
+                        وتحقيق النمو المستدام.
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">روابط سريعة</h5>
+                    <ul class="list-unstyled footer-links d-flex flex-column gap-3">
+                        <li><a href="index.html#about">من نحن</a></li>
+                        <li><a href="index.html#services">الخدمات</a></li>
+                        <li><a href="courses.html">الدورات</a></li>
+                        <li><a href="staff.html">الكوادر</a></li>
+                        <li><a href="#">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">الصفحات</h5>
+                    <ul class="list-unstyled footer-links d-flex flex-column gap-3">
+                        <li><a href="media.html">الاعلام</a></li>
+                        <li><a href="card.html">بطاقتك الرقميه</a></li>
+                        <li><a href="registration.html">التسجيل</a></li>
+                        <li><a href="certificates.html">التحقق من الشهادات</a></li>
+                        <li><a href="jobbs.html">الوظائف</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">تواصل معنا</h5>
+                    <ul class="list-unstyled footer-contact d-flex flex-column gap-2">
+                         <li>📞 <span dir="ltr"> +964 787 997 4397</span></li>
+                        <li>📍 بغداد – شارع أبو طيارة، قرب بيك جكن</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">ساعات العمل</h5>
+                    <p class="mb-2">
+                        الأحد – الخميس<br>
+                        9 ص – 4 م
+                    </p>
+
+                    <h6 class="mt-5 mb-3">تابعنا</h6>
+                    <div class="footer-social d-flex gap-2 flex-wrap">
+                        <a href="https://www.facebook.com/Dijla.Group.IRQ" target="_blank" class="facebook"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/dijla__group/#" target="_blank" class="instagram"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-4">
+            <div class="text-center small pb-3 footer-end">
+                جميع الحقوق محفوظة لأكاديمية دجلة.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

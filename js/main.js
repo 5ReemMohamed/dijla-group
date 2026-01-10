@@ -39,13 +39,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  document.querySelectorAll('.dropdown-submenu > a').forEach(el => {
-    el.addEventListener('click', function (e) {
-      e.preventDefault();
-      e.stopPropagation();
-      this.nextElementSibling.classList.toggle('show');
-    });
+document.querySelectorAll('.submenu-toggle').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const submenu = this.nextElementSibling;
+
+    document.querySelectorAll('.dropdown-submenu .dropdown-menu')
+      .forEach(menu => {
+        if (menu !== submenu) menu.style.display = 'none';
+      });
+
+    submenu.style.display =
+      submenu.style.display === 'block' ? 'none' : 'block';
   });
+});
 
   document.querySelectorAll('.navbar-nav a').forEach(link => {
     link.addEventListener('click', () => {

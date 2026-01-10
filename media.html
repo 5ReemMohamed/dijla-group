@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijla Group | الإعلام على منصات التواصل</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link href="css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80" tabindex="0">
+    <canvas id="fluid">
+    </canvas>
+    <header class="hero-header course-header">
+        <nav id="mainNav" class="navbar navbar-expand-xl navbar-dark fixed-top">
+            <div class="container">
+
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <img src="images/logo.png" height="70" alt="logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto gap-4 justify-content-center align-items-center">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#about">من نحن ؟</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#services">الخدمات</a></li>
+                        <li class="nav-item"><a class="nav-link" href="courses.html">الدورات</a></li>
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle btn btn-link" data-bs-toggle="dropdown"
+                                type="button">
+                                الصفحات
+                            </button>
+
+                            <ul class="dropdown-menu text-end" aria-labelledby="pagesDropdown">
+
+                                <li><a class="dropdown-item" href="academic-calendar.html">التقويم الاكاديمي</a></li>
+                                <li class="dropdown-submenu">
+                                    <button class="dropdown-item submenu-toggle" data-bs-toggle="dropdown"
+                                        type="button">
+                                        عن المجموعة
+                                    </button>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="staff.html">الكوادر</a></li>
+                                        <li><a class="dropdown-item" href="projects.html">المشاريع</a></li>
+                                        <li><a class="dropdown-item" href="structure.html">الهيكل التنظيمي</a></li>
+                                        <li><a class="dropdown-item" href="academic-council.html">المجلس الاكاديمي</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="committees.html">اللجان</a></li>
+                                        <li><a class="dropdown-item" href="legal-approvals.html">الاعتمادات
+                                                القانونية</a></li>
+                                        <li><a class="dropdown-item" href="partner.html">الشركاء</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#media">الاعلام</a></li>
+                                <li><a class="dropdown-item" href="card.html">بطاقتك الرقميه</a></li>
+                                <li><a class="dropdown-item" href="registration.html">التسجيل</a></li>
+                                <li><a class="dropdown-item" href="certificates.html">التحقق من الشهادات</a></li>
+                                <li><a class="dropdown-item" href="jobbs.html">الوظائف</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا </a></li>
+                    </ul>
+
+                    <div class="d-flex align-items-center justify-content-center gap-3 py-3 py-xl-0">
+                        <a href="contact.html" class="btn btn-primary">
+                            اطلب استشارة
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <div class="row g-4 justify-content-center align-items-center mt-lg-5">
+            <div class="col-lg-7" data-aos="zoom-in">
+                <div class="hero-content container text-center">
+                    <h1 class="fs-1">الإعلام على منصات التواصل</h1>
+                    <p>تابعنا على منصات التواصل الاجتماعي لآخر الأخبار والفعاليات</p>
+                    <div class="d-flex justify-content-center align-items-center gap-3 pb-3">
+                        <a href="https://www.facebook.com/Dijla.Group.IRQ" target="_blank"class="btn btn-facebook">فيسبوك</a>
+                        <a href="https://www.instagram.com/dijla__group/#" target="_blank" class="btn btn-instagram">انستغرام</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="media py-5" id="media">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-left">
+                    <div class="media-card">
+                        <div class="video-wrapper">
+                            <img src="images/structure.jpg" alt="video" class="rounded-4">
+                            <button class="play-btn" data-video="images/video-1.mp4">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+
+                        <div class="p-3">
+                            <h6 class="fw-bold mb-2">
+                                كورس التدريب المحاسبي العملي
+                            </h6>
+
+                            <p class="small mb-3">
+                                كورس تدريبي عملي في الشركات والمؤسسات
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="stats">
+                                    <span><i class="fa-solid fa-thumbs-up"></i> 16</span>
+                                    <span><i class="fa-solid fa-comment"></i> 3</span>
+                                </div>
+
+                                <button class="btn btn-sm btn-outline-secondary share-btn"
+                                    data-share-url="https://dijla-group.fun/social-media">
+                                    <i class="fa-solid fa-share"></i> Share
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="media-card">
+                        <div class="video-wrapper">
+                            <img src="images/structure.jpg" alt="video" class="rounded-4">
+                            <button class="play-btn" data-video="images/video-1.mp4">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+
+                        <div class="p-3">
+                            <h6 class="fw-bold mb-2">
+                                كورس التدريب المحاسبي العملي
+                            </h6>
+
+                            <p class="small mb-3">
+                                كورس تدريبي عملي في الشركات والمؤسسات
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="stats">
+                                    <span><i class="fa-solid fa-thumbs-up"></i> 16</span>
+                                    <span><i class="fa-solid fa-comment"></i> 3</span>
+                                </div>
+
+                                <button class="btn btn-sm btn-outline-secondary share-btn"
+                                    data-share-url="https://dijla-group.fun/social-media">
+                                    <i class="fa-solid fa-share"></i> Share
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-right">
+                    <div class="media-card">
+                        <div class="video-wrapper">
+                            <img src="images/structure.jpg" alt="video" class="rounded-4">
+                            <button class="play-btn" data-video="images/video-1.mp4">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+
+                        <div class="p-3">
+                            <h6 class="fw-bold mb-2">
+                                كورس التدريب المحاسبي العملي
+                            </h6>
+
+                            <p class="small mb-3">
+                                كورس تدريبي عملي في الشركات والمؤسسات
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="stats">
+                                    <span><i class="fa-solid fa-thumbs-up"></i> 16</span>
+                                    <span><i class="fa-solid fa-comment"></i> 3</span>
+                                </div>
+
+                                <button class="btn btn-sm btn-outline-secondary share-btn"
+                                    data-share-url="https://dijla-group.fun/social-media">
+                                    <i class="fa-solid fa-share"></i> Share
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-left">
+                    <div class="media-card">
+                        <div class="video-wrapper">
+                            <img src="images/structure.jpg" alt="video" class="rounded-4">
+                            <button class="play-btn" data-video="images/video-1.mp4">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+
+                        <div class="p-3">
+                            <h6 class="fw-bold mb-2">
+                                كورس التدريب المحاسبي العملي
+                            </h6>
+
+                            <p class="small mb-3">
+                                كورس تدريبي عملي في الشركات والمؤسسات
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="stats">
+                                    <span><i class="fa-solid fa-thumbs-up"></i> 16</span>
+                                    <span><i class="fa-solid fa-comment"></i> 3</span>
+                                </div>
+
+                                <button class="btn btn-sm btn-outline-secondary share-btn"
+                                    data-share-url="https://dijla-group.fun/social-media">
+                                    <i class="fa-solid fa-share"></i> Share
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container-fluid px-5">
+            <div class="row g-4 justify-content-lg-center">
+                <div class="col-lg-3 col-md-6">
+                    <a class="navbar-brand fw-bold" href="index.html">
+                        <img src="images/logo.png" height="70" alt="logo">
+                    </a>
+
+                    <p class="">
+                        مؤسسة عراقية رائدة في الاستشارات الإدارية والمالية
+                        والتدريب المهني، نسعى لتمكين الأفراد والمؤسسات
+                        وتحقيق النمو المستدام.
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">روابط سريعة</h5>
+                    <ul class="list-unstyled footer-links d-flex flex-column gap-3">
+                        <li><a href="index.html#about">من نحن</a></li>
+                        <li><a href="index.html#services">الخدمات</a></li>
+                        <li><a href="courses.html">الدورات</a></li>
+                        <li><a href="staff.html">الكوادر</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">الصفحات</h5>
+                    <ul class="list-unstyled footer-links d-flex flex-column gap-3">
+                        <li><a href="#media">الاعلام</a></li>
+                        <li><a href="card.html">بطاقتك الرقميه</a></li>
+                        <li><a href="registration.html">التسجيل</a></li>
+                        <li><a href="certificates.html">التحقق من الشهادات</a></li>
+                        <li><a href="jobbs.html">الوظائف</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">تواصل معنا</h5>
+                    <ul class="list-unstyled footer-contact d-flex flex-column gap-2">
+                        <li>📞 <span dir="ltr"> +964 787 997 4397</span></li>
+                        <li>📍 بغداد – شارع أبو طيارة، قرب بيك جكن</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">ساعات العمل</h5>
+                    <p class="mb-2">
+                        الأحد – الخميس<br>
+                        9 ص – 4 م
+                    </p>
+
+                    <h6 class="mt-5 mb-3">تابعنا</h6>
+                    <div class="footer-social d-flex gap-2 flex-wrap">
+                        <a href="https://www.facebook.com/Dijla.Group.IRQ" target="_blank" class="facebook"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/dijla__group/#" target="_blank" class="instagram"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-4">
+            <div class="text-center small pb-3 footer-end">
+                جميع الحقوق محفوظة لأكاديمية دجلة.
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content video-modal-content">
+
+                <div class="modal-body p-0 position-relative">
+
+                    <button type="button" class="btn-close video-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+
+                    <video id="modalVideo" controls autoplay class="w-100 video-player">
+                        <source src="" type="video/mp4">
+                    </video>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.querySelectorAll('.play-btn').forEach(button => {
+            button.addEventListener('click', function () {
+
+                const videoSrc = this.getAttribute('data-video');
+                const modalVideo = document.getElementById('modalVideo');
+
+                modalVideo.src = videoSrc;
+
+                const videoModal = new bootstrap.Modal(
+                    document.getElementById('videoModal')
+                );
+
+                videoModal.show();
+            });
+        });
+        document.getElementById('videoModal').addEventListener('hidden.bs.modal', () => {
+            const video = document.getElementById('modalVideo');
+            video.pause();
+            video.src = "";
+        });
+        document.querySelectorAll('.share-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+
+                const shareUrl = this.getAttribute('data-share-url');
+
+                if (navigator.share) {
+                    navigator.share({
+                        title: 'Dijla Group',
+                        text: 'شاهد هذا الفيديو التدريبي',
+                        url: shareUrl
+                    });
+                } else {
+                    navigator.clipboard.writeText(shareUrl);
+                    alert('Link copied to clipboard!');
+                }
+
+            });
+        });
+    </script>
+
+</body>
+
+</html>
