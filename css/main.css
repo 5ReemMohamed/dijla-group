@@ -287,6 +287,7 @@ section {
     text-align: center;
     background: linear-gradient(180deg, #2d2d2d 0%, #000 100%);
     z-index: 0;
+    height: 100%;
 }
 
 .goal-card::after {
@@ -299,7 +300,6 @@ section {
     transform: scaleY(0);
     transform-origin: bottom;
     transition: transform 0.5s ease-in-out;
-
     z-index: -1;
 }
 
@@ -341,7 +341,6 @@ section {
 
 .goal-card p {
     font-size: 16px;
-    font-style: italic;
 }
 
 .line {
@@ -476,14 +475,17 @@ section {
 .service-card .content p {
     font-size: 18px;
 }
+
 @media screen and (max-width:768px) {
     .service-card .content .service-title {
-    font-size: 20px;
+        font-size: 20px;
+    }
+
+    .service-card .content p {
+        font-size: 14px;
+    }
 }
-.service-card .content p {
-    font-size: 14px;
-}
-}
+
 .service-card .content ul {
     display: flex;
     flex-direction: column;
@@ -494,11 +496,13 @@ section {
     font-size: 16px;
     padding-right: 20px;
 }
+
 .services {
     position: relative;
     z-index: 1;
     overflow: hidden;
 }
+
 .circle-jump {
     position: absolute;
     top: 30%;
@@ -593,15 +597,17 @@ section {
     border-radius: 0px;
     overflow: hidden;
 }
+
 @media screen and (max-width:1100px) {
     .hero-header {
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
-}
+
 @media screen and (min-width:768px) {
     .hero-header {
         border-radius: 30px;
@@ -995,11 +1001,13 @@ section {
     border: 1px solid var(--secondary-color);
     transition: all 300ms ease;
 }
-@media screen and ( max-width : 768px) {
+
+@media screen and (max-width : 768px) {
     .counter-card .icon {
         top: -10%;
     }
 }
+
 .counter-card .number {
     font-size: 40px;
     font-weight: 700;
@@ -1216,9 +1224,22 @@ section {
 }
 
 .footer h5 {
-    font-style: 30px;
+    font-size: 20px;
     font-weight: 700;
     color: var(--secondary-color);
+    position: relative;
+    display: inline-block;
+}
+
+.footer h5::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    width: 60%;
+    height: 3px;
+    background: var(--secondary-color);
+    border-radius: 4px;
 }
 
 .footer .footer-links a {
@@ -1327,9 +1348,75 @@ section {
 }
 
 .courses .course-1 {
-    background-image: linear-gradient(to bottom, rgba(10, 10, 9, 0) 0%, rgb(10, 10, 9) 100%), url(../images/course-1.jpg);
+    background-image: linear-gradient(to bottom, rgba(10, 10, 9, 0) 0%, rgb(10, 10, 9) 100%), url(../images/course-1.avif);
     background-position: center;
     background-size: cover;
+}
+.courses .course-2 {
+    background-image: linear-gradient(to bottom, rgba(10, 10, 9, 0) 0%, rgb(10, 10, 9) 100%), url(../images/course-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.courses .course-3 {
+    background-image: linear-gradient(to bottom, rgba(10, 10, 9, 0) 0%, rgb(10, 10, 9) 100%), url(../images/course-3.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.courses .course-4 {
+    background-image: linear-gradient(to bottom, rgba(10, 10, 9, 0) 0%, rgb(10, 10, 9) 100%), url(../images/course-4.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.courses .course-5 {
+    background-image: linear-gradient(to bottom, rgba(10, 10, 9, 0) 0%, rgb(10, 10, 9) 100%), url(../images/course-5.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.courses .course-6 {
+    background-image: linear-gradient(to bottom, rgba(10, 10, 9, 0) 0%, rgb(10, 10, 9) 100%), url(../images/course-6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.courses .course-7 {
+    background-image: linear-gradient(to bottom, rgba(10, 10, 9, 0) 0%, rgb(10, 10, 9) 100%), url(../images/course-7.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.courses .course-8 {
+    background-image: linear-gradient(to bottom, rgba(10, 10, 9, 0) 0%, rgb(10, 10, 9) 100%), url(../images/course-8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.courses .course-9 {
+    background-image: linear-gradient(to bottom, rgba(10, 10, 9, 0) 0%, rgb(10, 10, 9) 100%), url(../images/course-9.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.courses .course-10 {
+    background-image: linear-gradient(to bottom, rgba(10, 10, 9, 0) 0%, rgb(10, 10, 9) 100%), url(../images/course-10.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.courses .course-11 {
+    background-image: linear-gradient(to bottom, rgba(10, 10, 9, 0) 0%, rgb(10, 10, 9) 100%), url(../images/course-11.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.courses .course-12 {
+    background-image: linear-gradient(to bottom, rgba(10, 10, 9, 0) 0%, rgb(10, 10, 9) 100%), url(../images/course-12.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .courses .course-card .content {
@@ -1679,11 +1766,13 @@ select option:hover {
         font-size: 18px;
     }
 }
+
 @media screen and (max-width:768px) {
     .comming-courses .course h3 {
         font-size: 10px;
     }
 }
+
 .staff,
 .projects,
 .council,
@@ -2662,10 +2751,12 @@ label {
     margin-inline-end: 5px;
     color: var(--secondary-color);
 }
-.modal{
+
+.modal {
     z-index: 200000;
     background-color: #00000065;
 }
+
 .modal-backdrop.show {
     backdrop-filter: blur(6px);
     background-color: rgba(0, 0, 0, 0.7);
@@ -2677,11 +2768,13 @@ label {
     border: none;
     box-shadow: none;
 }
+
 .video-player {
     border-radius: 20px;
     max-height: 80vh;
     background: #000;
 }
+
 .video-close {
     position: absolute;
     top: 15px;
@@ -2693,10 +2786,12 @@ label {
     filter: invert(1);
     opacity: 1;
 }
+
 .video-close:hover {
     background-color: rgba(255, 0, 0, 0.8);
     transform: scale(1.1);
 }
+
 @media (max-width: 768px) {
     .modal-dialog {
         margin: 1rem;
@@ -2719,7 +2814,7 @@ label {
         margin-top: 10px;
     }
 
-    .dropdown-submenu > .dropdown-menu {
+    .dropdown-submenu>.dropdown-menu {
         position: static;
         width: 100%;
         margin: 5px 0 0 0;
@@ -2727,7 +2822,7 @@ label {
         display: none;
     }
 
-    .dropdown-submenu.show > .dropdown-menu {
+    .dropdown-submenu.show>.dropdown-menu {
         display: block;
     }
 }
